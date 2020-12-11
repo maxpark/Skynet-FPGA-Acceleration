@@ -1,0 +1,76 @@
+(c) Copyright 2012-2019 Xilinx, Inc. All Rights Reserved.
+#-----------------------------------------------------------
+# Tool version  : sds++ 2019.1 SW Build 2552052 on Fri May 24 14:51:15 MDT 2019
+# Start time    : Wed Jul 08 18:35:40 +0800 2020
+# Command line  : sds++ -Wall -O3 -I../src -c -fmessage-length=0 -MTsrc-v1/transform.o -MMD -MP -MFsrc-v1/transform.d -MTsrc-v1/transform.o -o src-v1/transform.o ../src-v1/transform.cpp -sds-hw SkyNet SkyNet.cpp -clkid 2 -sds-end -sds-sys-config a53_linux -sds-proc a53_linux -sds-pf zcu104
+# Log file      : C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/reports/sds_transform.log
+# Journal file  : C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/reports/sds_transform.jou
+# Report file   : C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/reports/sds_transform.rpt
+#-----------------------------------------------------------
+
+Analyzing source for RTL template usage
+C:/Xilinx/SDx/2019.1/bin/rtl_template_extract  C:/Users/zhangqx/workspace/SDSoC/skynet/src-v1/transform.cpp  -save-query C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/.llvm/src-v1/transform.rtlx  --  -c  -I../src  -Wall -fmessage-length=0 -MMD -MP -D __SDSCC__  
+    -target aarch64-linux-gnu -mcpu=cortex-a53 -O0 -g -w      -I C:/Xilinx/SDx/2019.1/target/aarch64-linux/include  -D HLS_NO_XIL_FPO_LIB  -I C:/Xilinx/Vivado/2019.1/include   -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include/c++/8.2.0 -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include/c++/8.2.0/aarch64-linux-gnu -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include/c++/8.2.0/backward -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/lib/gcc/aarch64-linux-gnu/8.2.0/include -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/lib/gcc/aarch64-linux-gnu/8.2.0/include-fixed -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/libc/usr/include  -std=c++11
+Create data motion intermediate representation
+C:/Xilinx/SDx/2019.1/bin/clang_wrapper  -I../src  -Wall -fmessage-length=0 -MMD -MP -D __SDSCC__  -target aarch64-linux-gnu -mcpu=cortex-a53 -O0 -g       -I C:/Xilinx/SDx/2019.1/target/aarch64-linux/include  -D HLS_NO_XIL_FPO_LIB  -I C:/Xilinx/Vivado/2019.1/include   -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include/c++/8.2.0 -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include/c++/8.2.0/aarch64-linux-gnu -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include/c++/8.2.0/backward -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/lib/gcc/aarch64-linux-gnu/8.2.0/include -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/lib/gcc/aarch64-linux-gnu/8.2.0/include-fixed -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/libc/usr/include  -std=c++11  -emit-llvm -S C:/Users/zhangqx/workspace/SDSoC/skynet/src-v1/transform.cpp -o C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/.llvm/src-v1/transform.s
+
+C:\Users\zhangqx\workspace\SDSoC\skynet\Release>C:\Xilinx\SDx\2019.1\llvm-clang\win64\llvm\bin\clang.exe -I../src -Wall -fmessage-length=0 -MMD -MP -D __SDSCC__ -target aarch64-linux-gnu -mcpu=cortex-a53 -O0 -g -I C:/Xilinx/SDx/2019.1/target/aarch64-linux/include -D HLS_NO_XIL_FPO_LIB -I C:/Xilinx/Vivado/2019.1/include -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include/c++/8.2.0 -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include/c++/8.2.0/aarch64-linux-gnu -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include/c++/8.2.0/backward -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/lib/gcc/aarch64-linux-gnu/8.2.0/include -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/lib/gcc/aarch64-linux-gnu/8.2.0/include-fixed -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/libc/usr/include -std=c++11 -emit-llvm -S C:/Users/zhangqx/workspace/SDSoC/skynet/src-v1/transform.cpp -o C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/.llvm/src-v1/transform.s 
+
+C:\Users\zhangqx\workspace\SDSoC\skynet\Release>exit /b 0 
+Compiling C:/Users/zhangqx/workspace/SDSoC/skynet/src-v1/transform.cpp
+aarch64-linux-gnu-g++ -c -I../src -Wall -O3 -fmessage-length=0 -MMD -MP -D __SDSCC__ -MTC:/Users/zhangqx/workspace/SDSoC/skynet/Release/src-v1/transform.o -MFC:/Users/zhangqx/workspace/SDSoC/skynet/Release/src-v1/transform.d -MTC:/Users/zhangqx/workspace/SDSoC/skynet/Release/src-v1/transform.o       -I C:/Xilinx/SDx/2019.1/target/aarch64-linux/include  -D HLS_NO_XIL_FPO_LIB  -I C:/Xilinx/Vivado/2019.1/include C:/Users/zhangqx/workspace/SDSoC/skynet/src-v1/transform.cpp -o src-v1/transform.o
+                 from C:/Xilinx/Vivado/2019.1/include/ap_int.h:54,
+                 from C:/Users/zhangqx/workspace/SDSoC/skynet/src-v1/SkyNet.h:14,
+                 from C:/Users/zhangqx/workspace/SDSoC/skynet/src-v1/transform.cpp:1:
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h: In instantiation of 'void ap_private<_AP_W, _AP_S, true>::clearUnusedBits() volatile [with int _AP_W = 32; bool _AP_S = true]':
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:1447:5:   required from 'ap_private<_AP_W, _AP_S, true>& ap_private<_AP_W, _AP_S, true>::operator=(const ap_private<_AP_W, _AP_S, true>&) [with int _AP_W = 32; bool _AP_S = true]'
+C:/Xilinx/Vivado/2019.1/include/ap_int_ref.h:388:3:   required from 'ap_range_ref<_AP_W, _AP_S>& ap_range_ref<_AP_W, _AP_S>::operator=(unsigned char) [with int _AP_W = 32; bool _AP_S = true]'
+C:/Users/zhangqx/workspace/SDSoC/skynet/src-v1/transform.cpp:79:55:   required from here
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:2144:28: warning: enum constant in boolean context [-Wint-in-bool-context]
+             : (excess_bits ? (((uint64_t)VAL) << (excess_bits)) >> (excess_bits)
+               ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                            : (uint64_t)VAL));
+                            ~~~~~~~~~~~~~~~~
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h: In instantiation of 'void ap_private<_AP_W, _AP_S, true>::clearUnusedBits() volatile [with int _AP_W = 32; bool _AP_S = false]':
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:1482:1:   required from 'ap_private<_AP_W, _AP_S, true>& ap_private<_AP_W, _AP_S, true>::operator=(unsigned char) [with int _AP_W = 32; bool _AP_S = false]'
+C:/Xilinx/Vivado/2019.1/include/ap_int_base.h:240:3:   required from 'ap_int_base<_AP_W, _AP_S>::ap_int_base(unsigned char) [with int _AP_W = 32; bool _AP_S = false]'
+C:/Xilinx/Vivado/2019.1/include/ap_int_ref.h:388:3:   required from 'ap_range_ref<_AP_W, _AP_S>& ap_range_ref<_AP_W, _AP_S>::operator=(unsigned char) [with int _AP_W = 32; bool _AP_S = true]'
+C:/Users/zhangqx/workspace/SDSoC/skynet/src-v1/transform.cpp:79:55:   required from here
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:2144:28: warning: enum constant in boolean context [-Wint-in-bool-context]
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h: In instantiation of 'void ap_private<_AP_W, _AP_S, true>::clearUnusedBits() volatile [with int _AP_W = 8; bool _AP_S = false]':
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:1644:3:   required from 'ap_private<_AP_W, _AP_S, true>::ap_private(unsigned char) [with int _AP_W = 8; bool _AP_S = false]'
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:4661:3:   required from 'ap_private<_AP_W, _AP_S, false>& ap_private<_AP_W, _AP_S, false>::operator=(unsigned char) [with int _AP_W = 256; bool _AP_S = false]'
+C:/Xilinx/Vivado/2019.1/include/ap_int_base.h:240:3:   required from 'ap_int_base<_AP_W, _AP_S>::ap_int_base(unsigned char) [with int _AP_W = 256; bool _AP_S = false]'
+C:/Xilinx/Vivado/2019.1/include/ap_int_ref.h:388:3:   required from 'ap_range_ref<_AP_W, _AP_S>& ap_range_ref<_AP_W, _AP_S>::operator=(unsigned char) [with int _AP_W = 256; bool _AP_S = true]'
+C:/Users/zhangqx/workspace/SDSoC/skynet/src-v1/transform.cpp:67:93:   required from here
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:2144:28: warning: enum constant in boolean context [-Wint-in-bool-context]
+                 from C:/Xilinx/Vivado/2019.1/include/ap_int.h:54,
+                 from C:/Users/zhangqx/workspace/SDSoC/skynet/src-v1/SkyNet.h:14,
+                 from C:/Users/zhangqx/workspace/SDSoC/skynet/src-v1/transform.cpp:1:
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h: In instantiation of 'void ap_private<_AP_W, _AP_S, false>::cpSext(const ap_private<_AP_W1, _AP_S1>&) [with int _AP_W1 = 8; bool _AP_S1 = false; int _AP_W = 256; bool _AP_S = false]':
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:5334:7:   required from 'void ap_private<_AP_W, _AP_S, false>::cpSextOrTrunc(const ap_private<_AP_W1, _AP_S1>&) [with int _AP_W1 = 8; bool _AP_S1 = false; int _AP_W = 256; bool _AP_S = false]'
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:4597:7:   required from 'ap_private<_AP_W, _AP_S, false>& ap_private<_AP_W, _AP_S, false>::operator=(const ap_private<_AP_W1, _AP_S1>&) [with int _AP_W1 = 8; bool _AP_S1 = false; int _AP_W = 256; bool _AP_S = false]'
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:4661:3:   required from 'ap_private<_AP_W, _AP_S, false>& ap_private<_AP_W, _AP_S, false>::operator=(unsigned char) [with int _AP_W = 256; bool _AP_S = false]'
+C:/Xilinx/Vivado/2019.1/include/ap_int_base.h:240:3:   required from 'ap_int_base<_AP_W, _AP_S>::ap_int_base(unsigned char) [with int _AP_W = 256; bool _AP_S = false]'
+C:/Xilinx/Vivado/2019.1/include/ap_int_ref.h:388:3:   required from 'ap_range_ref<_AP_W, _AP_S>& ap_range_ref<_AP_W, _AP_S>::operator=(unsigned char) [with int _AP_W = 256; bool _AP_S = true]'
+C:/Users/zhangqx/workspace/SDSoC/skynet/src-v1/transform.cpp:67:93:   required from here
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:5291:45: warning: enum constant in boolean context [-Wint-in-bool-context]
+       static const uint64_t mask = wordBits ? (~0ULL << (wordBits)) : 0ULL;
+                                    ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:5299:43: warning: enum constant in boolean context [-Wint-in-bool-context]
+     static const uint64_t mask = wordBits ? (~0ULL << (wordBits)) : 0ULL;
+                                  ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                 from C:/Xilinx/Vivado/2019.1/include/ap_int.h:54,
+                 from C:/Users/zhangqx/workspace/SDSoC/skynet/src-v1/SkyNet.h:14,
+                 from C:/Users/zhangqx/workspace/SDSoC/skynet/src-v1/transform.cpp:1:
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h: In function 'void img_DT_2_DT4(ADT*, ADT4*, layer, int)':
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:2144:42: warning: 'tmp.ap_private<32, false>::VAL' is used uninitialized in this function [-Wuninitialized]
+             : (excess_bits ? (((uint64_t)VAL) << (excess_bits)) >> (excess_bits)
+                                          ^~~
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h: In function 'void fm_DT_2_DT32(ADT*, ADT32*, layer)':
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:3428:28: warning: 'tmp.ap_private<256, false, false>::pVal[3]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+                      : pVal[_AP_N - 1]);
+                        ~~~~^
+aarch64-linux-gnu-objcopy --add-section .xdsdata=C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/swstubs/transform.o.xml src-v1/transform.o
+sds++ log file saved as C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/reports/sds_transform.log
+sds++ completed at Wed Jul 08 18:35:55 +0800 2020

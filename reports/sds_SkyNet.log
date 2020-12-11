@@ -1,0 +1,194 @@
+(c) Copyright 2012-2019 Xilinx, Inc. All Rights Reserved.
+#-----------------------------------------------------------
+# Tool version  : sds++ 2019.1 SW Build 2552052 on Fri May 24 14:51:15 MDT 2019
+# Start time    : Wed Jul 08 18:39:15 +0800 2020
+# Command line  : sds++ -Wall -O3 -I../src -c -fmessage-length=0 -MTsrc/SkyNet.o -MMD -MP -MFsrc/SkyNet.d -MTsrc/SkyNet.o -o src/SkyNet.o ../src/SkyNet.cpp -sds-hw SkyNet SkyNet.cpp -clkid 2 -sds-end -sds-sys-config a53_linux -sds-proc a53_linux -sds-pf zcu104
+# Log file      : C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/reports/sds_SkyNet.log
+# Journal file  : C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/reports/sds_SkyNet.jou
+# Report file   : C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/reports/sds_SkyNet.rpt
+#-----------------------------------------------------------
+
+Analyzing source for RTL template usage
+C:/Xilinx/SDx/2019.1/bin/rtl_template_extract  C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp  -save-query C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/.llvm/src/SkyNet.rtlx  --  -c  -I../src  -Wall -fmessage-length=0 -MMD -MP -D __SDSCC__  
+    -target aarch64-linux-gnu -mcpu=cortex-a53 -O0 -g -w      -I C:/Xilinx/SDx/2019.1/target/aarch64-linux/include  -D HLS_NO_XIL_FPO_LIB  -I C:/Xilinx/Vivado/2019.1/include   -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include/c++/8.2.0 -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include/c++/8.2.0/aarch64-linux-gnu -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include/c++/8.2.0/backward -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/lib/gcc/aarch64-linux-gnu/8.2.0/include -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/lib/gcc/aarch64-linux-gnu/8.2.0/include-fixed -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/libc/usr/include  -std=c++11
+Create data motion intermediate representation
+C:/Xilinx/SDx/2019.1/bin/clang_wrapper  -I../src  -Wall -fmessage-length=0 -MMD -MP -D __SDSCC__  -target aarch64-linux-gnu -mcpu=cortex-a53 -O0 -g       -I C:/Xilinx/SDx/2019.1/target/aarch64-linux/include  -D HLS_NO_XIL_FPO_LIB  -I C:/Xilinx/Vivado/2019.1/include   -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include/c++/8.2.0 -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include/c++/8.2.0/aarch64-linux-gnu -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include/c++/8.2.0/backward -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/lib/gcc/aarch64-linux-gnu/8.2.0/include -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/lib/gcc/aarch64-linux-gnu/8.2.0/include-fixed -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/libc/usr/include  -std=c++11  -emit-llvm -S C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp -o C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/.llvm/src/SkyNet.s
+
+C:\Users\zhangqx\workspace\SDSoC\skynet\Release>C:\Xilinx\SDx\2019.1\llvm-clang\win64\llvm\bin\clang.exe -I../src -Wall -fmessage-length=0 -MMD -MP -D __SDSCC__ -target aarch64-linux-gnu -mcpu=cortex-a53 -O0 -g -I C:/Xilinx/SDx/2019.1/target/aarch64-linux/include -D HLS_NO_XIL_FPO_LIB -I C:/Xilinx/Vivado/2019.1/include -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include/c++/8.2.0 -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include/c++/8.2.0/aarch64-linux-gnu -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include/c++/8.2.0/backward -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/lib/gcc/aarch64-linux-gnu/8.2.0/include -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/lib/gcc/aarch64-linux-gnu/8.2.0/include-fixed -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/libc/usr/include -std=c++11 -emit-llvm -S C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp -o C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/.llvm/src/SkyNet.s 
+
+C:\Users\zhangqx\workspace\SDSoC\skynet\Release>exit /b 0 
+Performing accelerator source linting for SkyNet
+C:/Xilinx/SDx/2019.1/bin/sdslint -target cortex-a53 -func "SkyNet" C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp -- -c -I../src -Wall -fmessage-length=0 -MMD -MP -D __SDSCC__ -target aarch64-linux-gnu -mcpu=cortex-a53 -O0 -g -w      -I C:/Xilinx/SDx/2019.1/target/aarch64-linux/include  -D HLS_NO_XIL_FPO_LIB  -I C:/Xilinx/Vivado/2019.1/include   -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include/c++/8.2.0 -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include/c++/8.2.0/aarch64-linux-gnu -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include/c++/8.2.0/backward -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/lib/gcc/aarch64-linux-gnu/8.2.0/include -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/lib/gcc/aarch64-linux-gnu/8.2.0/include-fixed -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/libc/usr/include  -std=c++11
+aarch64-linux-gnu-g++ -c C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/swstubs/SkyNet.cpp -o C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/swstubs/SkyNet.o
+aarch64-linux-gnu-objcopy --add-section .xdinfo=C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/swstubs/SkyNet.o.xml C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/swstubs/SkyNet.o
+Performing pragma generation
+C:/Xilinx/SDx/2019.1/bin/clang_wrapper -E -IC:/Users/zhangqx/workspace/SDSoC/skynet/src -Wall -fmessage-length=0 -MMD -MP -D __SDSCC__ -m64 -D HLS_NO_XIL_FPO_LIB -I C:/Xilinx/SDx/2019.1/target/aarch64-linux/include -IC:/Users/zhangqx/workspace/SDSoC/skynet/src -D __SDSVHLS__ -target aarch64-linux-gnu -mcpu=cortex-a53 -O0 -g -w      -I C:/Xilinx/SDx/2019.1/target/aarch64-linux/include  -D HLS_NO_XIL_FPO_LIB  -I C:/Xilinx/Vivado/2019.1/include   -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include/c++/8.2.0 -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include/c++/8.2.0/aarch64-linux-gnu -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include/c++/8.2.0/backward -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/lib/gcc/aarch64-linux-gnu/8.2.0/include -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/lib/gcc/aarch64-linux-gnu/8.2.0/include-fixed -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/libc/usr/include  -std=c++11 C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp -o C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/vhls/SkyNet_pp.cpp
+
+C:\Users\zhangqx\workspace\SDSoC\skynet\Release>C:\Xilinx\SDx\2019.1\llvm-clang\win64\llvm\bin\clang.exe -E -IC:/Users/zhangqx/workspace/SDSoC/skynet/src -Wall -fmessage-length=0 -MMD -MP -D __SDSCC__ -m64 -D HLS_NO_XIL_FPO_LIB -I C:/Xilinx/SDx/2019.1/target/aarch64-linux/include -IC:/Users/zhangqx/workspace/SDSoC/skynet/src -D __SDSVHLS__ -target aarch64-linux-gnu -mcpu=cortex-a53 -O0 -g -w -I C:/Xilinx/SDx/2019.1/target/aarch64-linux/include -D HLS_NO_XIL_FPO_LIB -I C:/Xilinx/Vivado/2019.1/include -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include/c++/8.2.0 -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include/c++/8.2.0/aarch64-linux-gnu -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include/c++/8.2.0/backward -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/lib/gcc/aarch64-linux-gnu/8.2.0/include -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/lib/gcc/aarch64-linux-gnu/8.2.0/include-fixed -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/libc/usr/include -std=c++11 C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp -o C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/vhls/SkyNet_pp.cpp 
+
+C:\Users\zhangqx\workspace\SDSoC\skynet\Release>exit /b 0 
+C:/Xilinx/SDx/2019.1/bin/pragma_gen  -func "SkyNet"   -tcl C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/vhls/SkyNet.tcl   C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/vhls/SkyNet_pp.cpp -multi_aximm   --  -c  -D __SDSVHLS__ -IC:/Users/zhangqx/workspace/SDSoC/skynet/src -Wall -O3 -fmessage-length=0 -MMD -MP -D __SDSCC__ -m64      -D HLS_NO_XIL_FPO_LIB  -I C:/Xilinx/SDx/2019.1/target/aarch64-linux/include -IC:/Users/zhangqx/workspace/SDSoC/skynet/src  -target aarch64-linux-gnu -mcpu=cortex-a53 -O0 -g -w      -I C:/Xilinx/SDx/2019.1/target/aarch64-linux/include  -D HLS_NO_XIL_FPO_LIB  -I C:/Xilinx/Vivado/2019.1/include   -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include/c++/8.2.0 -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include/c++/8.2.0/aarch64-linux-gnu -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include/c++/8.2.0/backward -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/lib/gcc/aarch64-linux-gnu/8.2.0/include -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/lib/gcc/aarch64-linux-gnu/8.2.0/include-fixed -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/libc/usr/include  -std=c++11
+WARNING: [PragmaGen 83-3203] VHLS interface pragma "m_axi" has been specified for argument: "fm", no directives will be generated by SDSoC!
+WARNING: [PragmaGen 83-3203] VHLS interface pragma "m_axi" has been specified for argument: "img", no directives will be generated by SDSoC!
+WARNING: [PragmaGen 83-3203] VHLS interface pragma "m_axi" has been specified for argument: "weight", no directives will be generated by SDSoC!
+WARNING: [PragmaGen 83-3203] VHLS interface pragma "m_axi" has been specified for argument: "biasm", no directives will be generated by SDSoC!
+INFO: [PragmaGen 83-3231] Successfully generated tcl script: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/vhls/SkyNet.tcl
+Moving function SkyNet to Programmable Logic
+C:/Xilinx/Vivado/2019.1/bin/vivado_hls C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/vhls/SkyNet_run.tcl -l SkyNet_vivado_hls.log
+
+****** Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/Xilinx/Vivado/2019.1/scripts/vivado_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/vivado_hls.exe'
+INFO: [HLS 200-10] For user 'zhangqx' on host 'desktop-2l4t92t' (Windows NT_amd64 version 6.2) on Wed Jul 08 18:39:32 +0800 2020
+INFO: [HLS 200-10] In directory 'C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/vhls'
+Sourcing Tcl script 'C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/vhls/SkyNet_run.tcl'
+INFO: [HLS 200-10] Creating and opening project 'C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/vhls/SkyNet'.
+INFO: [HLS 200-10] Adding design file 'C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp' to the project
+INFO: [HLS 200-10] Creating and opening solution 'C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/vhls/SkyNet/solution'.
+INFO: [HLS 200-10] Cleaning up the solution database.
+INFO: [HLS 200-10] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 6.667ns.
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_export -vivado_optimization_level=0
+INFO: [HLS 200-435] Setting 'config_export -vivado_optimization_level' configuration: config_export -vivado_phys_opt=none
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_rtl -module_auto_prefix=1
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty 27%
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.8ns.
+WARNING: [HLS 200-483] The 'config_rtl -prefix' command is deprecated and will be removed in a future release. Use 'config_rtl -module_prefix' as its replacement.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:02 ; elapsed = 00:00:21 . Memory (MB): peak = 165.129 ; gain = 74.160
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:02 ; elapsed = 00:00:21 . Memory (MB): peak = 165.129 ; gain = 74.160
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [XFORM 203-603] Inlining function 'ReLU' into 'ACTIVATION' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:450).
+INFO: [XFORM 203-603] Inlining function 'clamp_adt' into 'ACTIVATION' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:453).
+INFO: [XFORM 203-603] Inlining function 'clamp_SDT' into 'PWCONV1X1' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:403).
+INFO: [XFORM 203-603] Inlining function 'clamp_SDT' into 'PWCONV1X1' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:415).
+INFO: [XFORM 203-603] Inlining function 'MAX' into 'POOL' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:594).
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:02 ; elapsed = 00:00:22 . Memory (MB): peak = 165.129 ; gain = 74.160
+INFO: [HLS 200-10] Checking synthesizability ...
+WARNING: [SYNCHK 200-23] C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:57: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:03 ; elapsed = 00:00:23 . Memory (MB): peak = 170.785 ; gain = 79.816
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1.1' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:528) in function 'Load_FM.1' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1.1' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:588) in function 'POOL.1' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1.1' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:659) in function 'CLR_FM' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1.1' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:755) in function 'Load_IMG' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1.1' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:42) in function 'REORG' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:621) in function 'Export_CONV1' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-2' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:630) in function 'Export_CONV1' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-3.1' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:641) in function 'Export_CONV1' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1.1' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:605) in function 'Load_FM1' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1.1' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:528) in function 'Load_FM' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1.1' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:588) in function 'POOL' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1.1' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:298) in function 'PWCONV1X1' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-2.1.1.1.1' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:317) in function 'PWCONV1X1' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-2.1.2' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:327) in function 'PWCONV1X1' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-2.1.3' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:397) in function 'PWCONV1X1' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-2.2' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:407) in function 'PWCONV1X1' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1.1' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:558) in function 'Export_CONV' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1.1' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:446) in function 'ACTIVATION' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1.1.1.1' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:83) in function 'DWCONV3X3' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:482) in function 'Load_WBUF1x1' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:497) in function 'Load_BBUF' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:497) in function 'Load_BBUF.1' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1.1' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:467) in function 'Load_WBUF3x3' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1.1' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:467) in function 'Load_WBUF3x3.1' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:534) in function 'Load_FM.1' completely with a factor of 32.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:593) in function 'POOL.1' completely with a factor of 32.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:662) in function 'CLR_FM' completely with a factor of 32.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:759) in function 'Load_IMG' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:54) in function 'REORG' completely with a factor of 32.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:624) in function 'Export_CONV1' completely with a factor of 32.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.1' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:633) in function 'Export_CONV1' completely with a factor of 32.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.1.1' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:646) in function 'Export_CONV1' completely with a factor of 32.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:611) in function 'Load_FM1' completely with a factor of 32.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:534) in function 'Load_FM' completely with a factor of 32.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:593) in function 'POOL' completely with a factor of 32.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:301) in function 'PWCONV1X1' completely with a factor of 32.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.1.1.1.1.1' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:320) in function 'PWCONV1X1' completely with a factor of 32.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.1.2.1' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:330) in function 'PWCONV1X1' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.1.2.1.1' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:333) in function 'PWCONV1X1' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.1.2.2' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:387) in function 'PWCONV1X1' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.1.2.2.1' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:390) in function 'PWCONV1X1' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.1.3.1' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:401) in function 'PWCONV1X1' completely with a factor of 32.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.2.1' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:411) in function 'PWCONV1X1' completely with a factor of 32.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:563) in function 'Export_CONV' completely with a factor of 32.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:448) in function 'ACTIVATION' completely with a factor of 32.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1.1.1' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:85) in function 'DWCONV3X3' completely with a factor of 32.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:487) in function 'Load_WBUF1x1' completely with a factor of 32.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:500) in function 'Load_BBUF' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:500) in function 'Load_BBUF.1' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:472) in function 'Load_WBUF3x3' completely with a factor of 32.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:472) in function 'Load_WBUF3x3.1' completely with a factor of 32.
+INFO: [XFORM 203-102] Partitioning array 'max' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:683) automatically.
+INFO: [XFORM 203-102] Partitioning array 'h_max' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:683) automatically.
+INFO: [XFORM 203-102] Partitioning array 'w_max' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:683) automatically.
+INFO: [XFORM 203-102] Automatically partitioning small array 'BBOX.V' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:1143) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'xs' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:684) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'ys' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:684) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'ws' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:684) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'hs' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:684) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'flag' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:684) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'x' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:684) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'y' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:684) completely based on array size.
+INFO: [XFORM 203-101] Partitioning array 'WBUF1x1'  in dimension 3 completely.
+INFO: [XFORM 203-101] Partitioning array 'FM1'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'FM2'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'FM3'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'FM4'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'localC' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:280) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'A_buffer' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:282) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'B_buffer' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:285) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'BBUF'  in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'MBUF'  in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'WBUF3x3'  in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'BBOX.V' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:1143) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'xs' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:684) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'ys' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:684) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'ws' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:684) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'hs' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:684) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'flag' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:684) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'x' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:684) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'y' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:684) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'localC' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:280) in dimension 2 completely.
+WARNING: [XFORM 203-104] Completely partitioning array 'A_buffer' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:282) accessed through non-constant indices on dimension 1 (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:342:8), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'A_buffer' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:282) in dimension 2 completely.
+WARNING: [XFORM 203-104] Completely partitioning array 'B_buffer' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:285) accessed through non-constant indices on dimension 1 (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:342:8), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'B_buffer' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:285) in dimension 2 completely.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:397:69) to (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:397:63) in function 'PWCONV1X1'... converting 65 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:407:35) to (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:415:22) in function 'PWCONV1X1'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:717:9) to (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:745:9) in function 'Compute_BBOX'... converting 14 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:688:9) to (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:702:20) in function 'Compute_BBOX'... converting 6 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:446:27) to (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:446:22) in function 'ACTIVATION'... converting 65 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'PWCONV1X1' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:269)...63 expression(s) balanced.
+INFO: [XFORM 203-11] Balancing expressions in function 'POOL.1' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:575:24)...8 expression(s) balanced.
+INFO: [XFORM 203-11] Balancing expressions in function 'POOL' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:580)...8 expression(s) balanced.
+INFO: [XFORM 203-11] Balancing expressions in function 'Load_WBUF3x3.1' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:465:27)...3 expression(s) balanced.
+INFO: [XFORM 203-11] Balancing expressions in function 'Load_IMG' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:749)...7 expression(s) balanced.
+INFO: [XFORM 203-11] Balancing expressions in function 'Load_FM.1' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:517:29)...8 expression(s) balanced.
+INFO: [XFORM 203-11] Balancing expressions in function 'Load_FM' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:511)...8 expression(s) balanced.
+INFO: [XFORM 203-11] Balancing expressions in function 'Export_CONV' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:542)...8 expression(s) balanced.
+INFO: [XFORM 203-11] Balancing expressions in function 'ACTIVATION' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:438)...3 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 02:02:02 ; elapsed = 02:03:11 . Memory (MB): peak = 4940.707 ; gain = 4849.738
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:40:28) in function 'REORG'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:296:13) in function 'PWCONV1X1'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-2.1.1.1' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:315:13) in function 'PWCONV1X1'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-2.1.1' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:313:30) in function 'PWCONV1X1'.
+WARNING: [XFORM 203-542] Cannot flatten a loop nest 'Loop-2.1' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:311:20) in function 'PWCONV1X1' : 
+
+more than one sub loop.
+WARNING: [XFORM 203-542] Cannot flatten a loop nest 'Loop-2' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:309:16) in function 'PWCONV1X1' : 
+
+more than one sub loop.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:586:17) in function 'POOL.1'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:586:17) in function 'POOL'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:465:16) in function 'Load_WBUF3x3.1'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:465:16) in function 'Load_WBUF3x3'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:753:17) in function 'Load_IMG'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:603:17) in function 'Load_FM1'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp:526:17) in function 'Load_FM.1'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1' (C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.

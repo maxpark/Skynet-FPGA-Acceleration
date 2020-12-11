@@ -1,0 +1,105 @@
+(c) Copyright 2012-2019 Xilinx, Inc. All Rights Reserved.
+#-----------------------------------------------------------
+# Tool version  : sds++ 2019.1 SW Build 2552052 on Fri May 24 14:51:15 MDT 2019
+# Start time    : Wed Jul 08 08:19:43 +0800 2020
+# Command line  : sds++ -o skynet.elf ./src/SkyNet.o ./src/main.o ./src/transform.o ./src/utils.o -dmclkid 2 -sds-sys-config a53_linux -sds-proc a53_linux -sds-pf zcu104
+# Log file      : C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/reports/sds.log
+# Journal file  : C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/reports/sds.jou
+# Report file   : C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/reports/sds.rpt
+#-----------------------------------------------------------
+
+#-----------------------------------------------------------
+# This file contains undocumented internal commands and is
+# provided for diagnostic purposes. To reproduce the results
+# of this run, please run the sds++ command line above again.
+#-----------------------------------------------------------
+
+# Removing implementation files from previous run
+# Analyzing object files
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xdinfo=alloc --only-section=.xdinfo C:/Users/zhangqx/workspace/SDSoC/skynet/Release/src/SkyNet.o C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/.data/xdinfo.xml
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xdrtlx=alloc --only-section=.xdrtlx C:/Users/zhangqx/workspace/SDSoC/skynet/Release/src/SkyNet.o C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/.rtlx/SkyNet.rtlx
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xddata=alloc --only-section=.xddata C:/Users/zhangqx/workspace/SDSoC/skynet/Release/src/SkyNet.o C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/.data/SkyNet.xml
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xdpp=alloc --only-section=.xdpp C:/Users/zhangqx/workspace/SDSoC/skynet/Release/src/SkyNet.o C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/.pp/SkyNet.ii
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xdfcnmap=alloc --only-section=.xdfcnmap C:/Users/zhangqx/workspace/SDSoC/skynet/Release/src/SkyNet.o C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/.cdb/SkyNet.SkyNet.fcnmap.xml
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xdhlscore=alloc --only-section=.xdhlscore C:/Users/zhangqx/workspace/SDSoC/skynet/Release/src/SkyNet.o C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/xilinx_com_hls_SkyNet_1_0.zip
+C:/Xilinx/SDx/2019.1/bin/unzip.bat -u -o C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/xilinx_com_hls_SkyNet_1_0.zip -d C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xdinfo=alloc --only-section=.xdinfo C:/Users/zhangqx/workspace/SDSoC/skynet/Release/src/main.o C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/.data/xdinfo.xml
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xddata=alloc --only-section=.xddata C:/Users/zhangqx/workspace/SDSoC/skynet/Release/src/main.o C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/.data/xddata.xml
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xdsdata=alloc --only-section=.xdsdata C:/Users/zhangqx/workspace/SDSoC/skynet/Release/src/main.o C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/.data/main.o.xml
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xdinfo=alloc --only-section=.xdinfo C:/Users/zhangqx/workspace/SDSoC/skynet/Release/src/transform.o C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/.data/xdinfo.xml
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xddata=alloc --only-section=.xddata C:/Users/zhangqx/workspace/SDSoC/skynet/Release/src/transform.o C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/.data/xddata.xml
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xdsdata=alloc --only-section=.xdsdata C:/Users/zhangqx/workspace/SDSoC/skynet/Release/src/transform.o C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/.data/transform.o.xml
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xdinfo=alloc --only-section=.xdinfo C:/Users/zhangqx/workspace/SDSoC/skynet/Release/src/utils.o C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/.data/xdinfo.xml
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xddata=alloc --only-section=.xddata C:/Users/zhangqx/workspace/SDSoC/skynet/Release/src/utils.o C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/.data/xddata.xml
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xdsdata=alloc --only-section=.xdsdata C:/Users/zhangqx/workspace/SDSoC/skynet/Release/src/utils.o C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/.data/utils.o.xml
+C:/Xilinx/SDx/2019.1/bin/build_xd_ip_db -ip_search 0  -sds-pf C:/Users/zhangqx/workspace/SDSoC/skynet/Release/.Xil/zcu104.hpfm  -ip C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0  -o C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/.cdb/xd_ip_db.xml  
+# Generating data motion network
+C:/Xilinx/SDx/2019.1/bin/llvm-link -o C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/.llvm/sds_all.o C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/.llvm/./src/SkyNet.s C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/.llvm/./src/main.s C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/.llvm/./src/transform.s C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/.llvm/./src/utils.s
+cd C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/.llvm
+cd C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/.llvm
+C:/Xilinx/SDx/2019.1/bin/XidanePass  --dmclkid 2  --repo C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/.cdb/xd_ip_db.xml  --dmdb C:/Xilinx/SDx/2019.1/data/DM.db   -os linux -processor cortex-a53 -partition 0  
+cd C:/Users/zhangqx/workspace/SDSoC/skynet/Release
+# Removing implementation files from previous run C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/p0/vivado
+# Removing implementation files from previous run C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/p0/vpl
+cd C:/Users/zhangqx/workspace/SDSoC/skynet/Release
+# Creating block diagram (BD)
+cd C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/p0/.xsd
+C:/Xilinx/SDx/2019.1/bin/sdx_link  -cf-system C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/.llvm/apsys_0.xml  -cf-db  C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/.cdb/xd_ip_db.xml  -xpfm C:/Xilinx/SDx/2019.1/platforms/zcu104/zcu104.xpfm   -multi-clks -trace-buffer 1024 -os linux -quiet
+cd C:/Users/zhangqx/workspace/SDSoC/skynet/Release
+cd _sds/p0/.cf_work
+C:/Xilinx/SDx/2019.1/bin/cf2sw  -i C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/.llvm/apsys_0.xml  -r C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/.cdb/xd_ip_db.xml  -pollMode 0 -mc
+cd C:/Users/zhangqx/workspace/SDSoC/skynet/Release
+# Rewrite caller functions
+cd C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/swstubs
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xdinfo=alloc --only-section=.xdinfo C:/Users/zhangqx/workspace/SDSoC/skynet/Release/src/main.o C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/.data/xdinfo.xml
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xddata=alloc --only-section=.xddata C:/Users/zhangqx/workspace/SDSoC/skynet/Release/src/main.o C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/.data/xddata.xml
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xdsdata=alloc --only-section=.xdsdata C:/Users/zhangqx/workspace/SDSoC/skynet/Release/src/main.o C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/.data/main.o.xml
+C:/Xilinx/SDx/2019.1/bin/caller_rewrite  -rewrite C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/.llvm/caller0.cfrewrite  -o C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/swstubs/main.cpp  C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/swstubs/unix_main.cpp  --  -c  -IC:/Users/zhangqx/workspace/SDSoC/skynet/src -IC:/Users/zhangqx/workspace/SDSoC/skynet/src -Wall -O3 -fmessage-length=0 -MMD -MP -D __SDSCC__  -target aarch64-linux-gnu -mcpu=cortex-a53 -O0 -g -w      -I C:/Xilinx/SDx/2019.1/target/aarch64-linux/include  -D HLS_NO_XIL_FPO_LIB  -I C:/Xilinx/Vivado/2019.1/include   -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include/c++/8.2.0 -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include/c++/8.2.0/aarch64-linux-gnu -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include/c++/8.2.0/backward -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/lib/gcc/aarch64-linux-gnu/8.2.0/include -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/lib/gcc/aarch64-linux-gnu/8.2.0/include-fixed -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/libc/usr/include  -std=c++11
+# Compile caller rewrite file C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/swstubs/main.cpp
+aarch64-linux-gnu-g++  -c C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/swstubs/main.cpp  -IC:/Users/zhangqx/workspace/SDSoC/skynet/src -IC:/Users/zhangqx/workspace/SDSoC/skynet/src -Wall -O3 -fmessage-length=0 -MMD -MP -D __SDSCC__        -I C:/Xilinx/SDx/2019.1/target/aarch64-linux/include  -D HLS_NO_XIL_FPO_LIB  -I C:/Xilinx/Vivado/2019.1/include  -o C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/swstubs/main.o
+cd C:/Users/zhangqx/workspace/SDSoC/skynet/Release
+# Prepare hardware access API functions
+cd C:/Users/zhangqx/workspace/SDSoC/skynet/Release
+# Create accelerator stub functions
+cd C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/swstubs
+C:/Xilinx/SDx/2019.1/bin/stub_gen  -func "SkyNet" -stub C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/.llvm/SkyNet.cfrewrite  -o C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/swstubs/SkyNet.cpp  C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/swstubs/unix_SkyNet.cpp  --  -c  -IC:/Users/zhangqx/workspace/SDSoC/skynet/src -IC:/Users/zhangqx/workspace/SDSoC/skynet/src -Wall -O3 -fmessage-length=0 -MMD -MP -D __SDSCC__  -target aarch64-linux-gnu -mcpu=cortex-a53 -O0 -g -w      -I C:/Xilinx/SDx/2019.1/target/aarch64-linux/include  -D HLS_NO_XIL_FPO_LIB  -I C:/Xilinx/Vivado/2019.1/include   -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include/c++/8.2.0 -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include/c++/8.2.0/aarch64-linux-gnu -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include/c++/8.2.0/backward -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/lib/gcc/aarch64-linux-gnu/8.2.0/include -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/lib/gcc/aarch64-linux-gnu/8.2.0/include-fixed -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/libc/usr/include  -std=c++11
+cd C:/Users/zhangqx/workspace/SDSoC/skynet/Release
+cd C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/swstubs
+# Compile hardware access API functions
+aarch64-linux-gnu-gcc         -I C:/Xilinx/SDx/2019.1/target/aarch64-linux/include  -D HLS_NO_XIL_FPO_LIB  -I C:/Xilinx/Vivado/2019.1/include -c  C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/swstubs/portinfo.c
+aarch64-linux-gnu-g++        -I C:/Xilinx/SDx/2019.1/target/aarch64-linux/include  -D HLS_NO_XIL_FPO_LIB  -I C:/Xilinx/Vivado/2019.1/include -c  C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/swstubs/cf_stub.c
+aarch64-linux-gnu-ar crs C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/swstubs/libxlnk_stub.a C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/swstubs/portinfo.o C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/swstubs/cf_stub.o
+cd C:/Users/zhangqx/workspace/SDSoC/skynet/Release
+cd C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/swstubs
+# Compile accelerator stub functions
+aarch64-linux-gnu-g++ -c SkyNet.cpp  -IC:/Users/zhangqx/workspace/SDSoC/skynet/src -IC:/Users/zhangqx/workspace/SDSoC/skynet/src -Wall -O3 -fmessage-length=0 -MMD -MP -D __SDSCC__        -I C:/Xilinx/SDx/2019.1/target/aarch64-linux/include  -D HLS_NO_XIL_FPO_LIB  -I C:/Xilinx/Vivado/2019.1/include -o SkyNet.o
+cd C:/Users/zhangqx/workspace/SDSoC/skynet/Release
+cd C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/swstubs
+aarch64-linux-gnu-ar crs C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/swstubs/libskynet.a C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/swstubs/portinfo.o C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/swstubs/cf_stub.o C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/swstubs/SkyNet.o
+cd C:/Users/zhangqx/workspace/SDSoC/skynet/Release
+# Preliminary link application ELF
+aarch64-linux-gnu-g++    C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/swstubs/SkyNet.o C:/Users/zhangqx/workspace/SDSoC/skynet/Release/src/transform.o C:/Users/zhangqx/workspace/SDSoC/skynet/Release/src/utils.o C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/swstubs/main.o      -LC:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/swstubs -Wl,--start-group  -Wl,--end-group -Wl,--start-group    -lpthread -LC:/Xilinx/SDx/2019.1/target/aarch64-linux/lib -lsds_lib -lxlnk_stub  -Wl,--end-group -o C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/swstubs/skynet.elf 
+aarch64-linux-gnu-objcopy -R .xdinfo -R .xddata -R .xdasm -R .xdfcnmap -R .xdhlscore -R .xdif -R .xdparams -R .xdcore -R .xdrepo -R .xdsdata -R .xdpp -R .xdrtlx C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/swstubs/skynet.elf
+cd C:/Users/zhangqx/workspace/SDSoC/skynet/Release
+# Enable generation of hardware programming files
+# Enable generation of boot files
+# Calling VPL
+C:/Xilinx/SDx/2019.1/bin/vpl   --iprepo C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo  --iprepo C:/Xilinx/SDx/2019.1/data/ip/xilinx  --platform C:/Xilinx/SDx/2019.1/platforms/zcu104/zcu104.xpfm  --temp_dir C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/p0  --output_dir C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/p0/vpl  --input_file C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/p0/.xsd/top.bd.tcl  --target hw   --save_temps  --kernels SkyNet:adapter --webtalk_flag SDSoC  --xp \"param:compiler.deleteDefaultReportConfigs=false\" 
+cd _sds/p0/.cf_work
+C:/Xilinx/SDx/2019.1/bin/cf2sw  -i C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/.llvm/apsys_0.xml  -r C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/.cdb/xd_ip_db.xml  -a address_map.xml  -pollMode 0 -mc
+cd C:/Users/zhangqx/workspace/SDSoC/skynet/Release
+# Software tracing enabled
+cd C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/swstubs
+# Compile hardware access API functions
+aarch64-linux-gnu-gcc         -I C:/Xilinx/SDx/2019.1/target/aarch64-linux/include  -D HLS_NO_XIL_FPO_LIB  -I C:/Xilinx/Vivado/2019.1/include -c  C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/swstubs/portinfo.c
+aarch64-linux-gnu-g++        -I C:/Xilinx/SDx/2019.1/target/aarch64-linux/include  -D HLS_NO_XIL_FPO_LIB  -I C:/Xilinx/Vivado/2019.1/include -c  C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/swstubs/cf_stub.c
+aarch64-linux-gnu-ar crs C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/swstubs/libxlnk_stub.a C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/swstubs/portinfo.o C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/swstubs/cf_stub.o
+cd C:/Users/zhangqx/workspace/SDSoC/skynet/Release
+cd C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/swstubs
+aarch64-linux-gnu-ar crs C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/swstubs/libskynet.a C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/swstubs/portinfo.o C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/swstubs/cf_stub.o C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/swstubs/SkyNet.o
+cd C:/Users/zhangqx/workspace/SDSoC/skynet/Release
+# Link application ELF file
+aarch64-linux-gnu-g++    C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/swstubs/SkyNet.o C:/Users/zhangqx/workspace/SDSoC/skynet/Release/src/transform.o C:/Users/zhangqx/workspace/SDSoC/skynet/Release/src/utils.o C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/swstubs/main.o      -LC:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/swstubs -Wl,--start-group  -Wl,--end-group -Wl,--start-group    -lpthread -LC:/Xilinx/SDx/2019.1/target/aarch64-linux/lib -lsds_lib -lxlnk_stub  -Wl,--end-group -o C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/swstubs/skynet.elf 
+aarch64-linux-gnu-objcopy -R .xdinfo -R .xddata -R .xdasm -R .xdfcnmap -R .xdhlscore -R .xdif -R .xdparams -R .xdcore -R .xdrepo -R .xdsdata -R .xdpp -R .xdrtlx C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/swstubs/skynet.elf
+# No timing report available
+# sds++ completed at Wed Jul 08 10:15:11 +0800 2020

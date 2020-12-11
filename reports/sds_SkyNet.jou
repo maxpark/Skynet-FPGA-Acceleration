@@ -1,0 +1,23 @@
+(c) Copyright 2012-2019 Xilinx, Inc. All Rights Reserved.
+#-----------------------------------------------------------
+# Tool version  : sds++ 2019.1 SW Build 2552052 on Fri May 24 14:51:15 MDT 2019
+# Start time    : Wed Jul 08 18:39:15 +0800 2020
+# Command line  : sds++ -Wall -O3 -I../src -c -fmessage-length=0 -MTsrc/SkyNet.o -MMD -MP -MFsrc/SkyNet.d -MTsrc/SkyNet.o -o src/SkyNet.o ../src/SkyNet.cpp -sds-hw SkyNet SkyNet.cpp -clkid 2 -sds-end -sds-sys-config a53_linux -sds-proc a53_linux -sds-pf zcu104
+# Log file      : C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/reports/sds_SkyNet.log
+# Journal file  : C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/reports/sds_SkyNet.jou
+# Report file   : C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/reports/sds_SkyNet.rpt
+#-----------------------------------------------------------
+
+#-----------------------------------------------------------
+# This file contains undocumented internal commands and is
+# provided for diagnostic purposes. To reproduce the results
+# of this run, please run the sds++ command line above again.
+#-----------------------------------------------------------
+
+# Analyzing source for RTL template usage
+C:/Xilinx/SDx/2019.1/bin/rtl_template_extract  C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp  -save-query C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/.llvm/src/SkyNet.rtlx  --  -c  -I../src  -Wall -fmessage-length=0 -MMD -MP -D __SDSCC__  
+    -target aarch64-linux-gnu -mcpu=cortex-a53 -O0 -g -w      -I C:/Xilinx/SDx/2019.1/target/aarch64-linux/include  -D HLS_NO_XIL_FPO_LIB  -I C:/Xilinx/Vivado/2019.1/include   -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include/c++/8.2.0 -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include/c++/8.2.0/aarch64-linux-gnu -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include/c++/8.2.0/backward -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/lib/gcc/aarch64-linux-gnu/8.2.0/include -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/lib/gcc/aarch64-linux-gnu/8.2.0/include-fixed -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/libc/usr/include  -std=c++11
+# Create data motion intermediate representation
+C:/Xilinx/SDx/2019.1/bin/clang_wrapper  -I../src  -Wall -fmessage-length=0 -MMD -MP -D __SDSCC__  -target aarch64-linux-gnu -mcpu=cortex-a53 -O0 -g       -I C:/Xilinx/SDx/2019.1/target/aarch64-linux/include  -D HLS_NO_XIL_FPO_LIB  -I C:/Xilinx/Vivado/2019.1/include   -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include/c++/8.2.0 -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include/c++/8.2.0/aarch64-linux-gnu -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include/c++/8.2.0/backward -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/lib/gcc/aarch64-linux-gnu/8.2.0/include -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/lib/gcc/aarch64-linux-gnu/8.2.0/include-fixed -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/libc/usr/include  -std=c++11  -emit-llvm -S C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp -o C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/.llvm/src/SkyNet.s
+# Performing accelerator source linting for SkyNet
+C:/Xilinx/SDx/2019.1/bin/sdslint -target cortex-a53 -func "SkyNet" C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.cpp -- -c -I../src -Wall -fmessage-length=0 -MMD -MP -D __SDSCC__ -target aarch64-linux-gnu -mcpu=cortex-a53 -O0 -g -w      -I C:/Xilinx/SDx/2019.1/target/aarch64-linux/include  -D HLS_NO_XIL_FPO_LIB  -I C:/Xilinx/Vivado/2019.1/include   -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include/c++/8.2.0 -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include/c++/8.2.0/aarch64-linux-gnu -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/aarch64-l

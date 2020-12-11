@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    table, th, td
+    {
+      border-collapse:collapse;
+      border:1px solid black;
+    }
+    th, td
+    {
+      padding:5px;
+    }
+    p
+    {
+      font-size:200%
+    }
+  </style>
+  <title> Data Motion Network Report </title>
+</head>
+<body>
+<p>Partition 0</p>
+<sup><strong>Note:</strong>
+ <ol><li>"(size)" may show up in the Declared/Transfer Size of an argument if the actual array size was not present in the C/C++ source code, most likely the argument is a pointer.</li>
+<li>Line number under Callsite with an asterisk * is based on the generated source file located at .../_sds/.llvm.  It is not based on the original source file.</li></ol></sup><table>
+<caption><b><font size="5">Data Motion Network</font></b></caption>
+<tr>
+<th>Accelerator</th>
+<th>Argument</th>
+<th>IP Port</th>
+<th>Direction</th>
+<th>Declared Size(bytes)</th>
+<th>Pragmas</th>
+<th>Connection</th>
+</tr>
+<tr>
+<td>SkyNet_1</td>
+<td>img_V</td>
+<td>img_V</td>
+<td>IN</td>
+<td>204800*4</td>
+<td><ul>
+<li>data_mover:zero_copy</li>
+</ul>
+</td>
+<td>ps_e_S_AXI_HP3_FPD:AXIMM:0x10</td>
+</tr>
+<td></td>
+<td>fm_V</td>
+<td>fm_V</td>
+<td>INOUT</td>
+<td>1514427*32</td>
+<td><ul>
+<li>data_mover:zero_copy</li>
+</ul>
+</td>
+<td>ps_e_S_AXI_HP2_FPD:AXIMM:0x1C</td>
+</tr>
+<td></td>
+<td>weight_V</td>
+<td>weight_V</td>
+<td>IN</td>
+<td>13792*32</td>
+<td><ul>
+<li>data_mover:zero_copy</li>
+</ul>
+</td>
+<td>ps_e_S_AXI_HP1_FPD:AXIMM:0x28</td>
+</tr>
+<td></td>
+<td>biasm_V</td>
+<td>biasm_V</td>
+<td>INOUT</td>
+<td>860*32</td>
+<td><ul>
+<li>data_mover:zero_copy</li>
+</ul>
+</td>
+<td>ps_e_S_AXI_HP0_FPD:AXIMM:0x34</td>
+</tr>
+</table>
+
+<table>
+<caption><b><font size="5">Accelerator Callsites</font></b></caption>
+<tr>
+<th>Accelerator</th>
+<th>Callsite</th>
+<th>IP Port</th>
+<th>Transfer Size(bytes)</th>
+<th>Paged or Contiguous</th>
+<th>Datamover Setup Time(CPU cycles)</th>
+<th>Transfer Time(CPU cycles)</th>
+</tr>
+<tr>
+<td>SkyNet_1</td>
+<td>main.cpp:135:2</td>
+<td>img_V</td>
+<td>819200</td>
+<td>contiguous</td>
+<td>90740</td>
+<td>1563942</td>
+</tr>
+<td></td>
+<td></td>
+<td>fm_V</td>
+<td>819200</td>
+<td>contiguous</td>
+<td>5434782</td>
+<td>92470568</td>
+</tr>
+<td></td>
+<td></td>
+<td>weight_V</td>
+<td>819200</td>
+<td>contiguous</td>
+<td>49267</td>
+<td>843634</td>
+</tr>
+<td></td>
+<td></td>
+<td>biasm_V</td>
+<td>819200</td>
+<td>contiguous</td>
+<td>3891</td>
+<td>54742</td>
+</tr>
+</table>
+</body>
+<dmn>
+	<accel name="SkyNet_1">
+		<arg name="img_V" ipPort="img_V" direction="IN" size="204800*4" pragma="" connectionIpPort="ps_e_S_AXI_HP3_FPD" connectionDm="AXIMM"\>
+		<arg name="fm_V" ipPort="fm_V" direction="INOUT" size="1514427*32" pragma="" connectionIpPort="ps_e_S_AXI_HP2_FPD" connectionDm="AXIMM"\>
+		<arg name="weight_V" ipPort="weight_V" direction="IN" size="13792*32" pragma="" connectionIpPort="ps_e_S_AXI_HP1_FPD" connectionDm="AXIMM"\>
+		<arg name="biasm_V" ipPort="biasm_V" direction="INOUT" size="860*32" pragma="" connectionIpPort="ps_e_S_AXI_HP0_FPD" connectionDm="AXIMM"\>
+	</accel>
+	<call accel="SkyNet_1" site="main.cpp:135:2">
+		<arg ipPort="img_V" size="819200" memType="contiguous" setup="90740" transfer="1563942"/>
+		<arg ipPort="fm_V" size="819200" memType="contiguous" setup="5434782" transfer="92470568"/>
+		<arg ipPort="weight_V" size="819200" memType="contiguous" setup="49267" transfer="843634"/>
+		<arg ipPort="biasm_V" size="819200" memType="contiguous" setup="3891" transfer="54742"/>
+	</call>
+</dmn>
+</html>

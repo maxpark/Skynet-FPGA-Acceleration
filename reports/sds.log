@@ -1,0 +1,1133 @@
+(c) Copyright 2012-2019 Xilinx, Inc. All Rights Reserved.
+#-----------------------------------------------------------
+# Tool version  : sds++ 2019.1 SW Build 2552052 on Fri May 24 14:51:15 MDT 2019
+# Start time    : Wed Jul 08 08:19:43 +0800 2020
+# Command line  : sds++ -o skynet.elf ./src/SkyNet.o ./src/main.o ./src/transform.o ./src/utils.o -dmclkid 2 -sds-sys-config a53_linux -sds-proc a53_linux -sds-pf zcu104
+# Log file      : C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/reports/sds.log
+# Journal file  : C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/reports/sds.jou
+# Report file   : C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/reports/sds.rpt
+#-----------------------------------------------------------
+
+Removing implementation files from previous run
+Libraries: 
+Library Paths {}
+Analyzing object files
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xdinfo=alloc --only-section=.xdinfo C:/Users/zhangqx/workspace/SDSoC/skynet/Release/src/SkyNet.o C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/.data/xdinfo.xml
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xdrtlx=alloc --only-section=.xdrtlx C:/Users/zhangqx/workspace/SDSoC/skynet/Release/src/SkyNet.o C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/.rtlx/SkyNet.rtlx
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xddata=alloc --only-section=.xddata C:/Users/zhangqx/workspace/SDSoC/skynet/Release/src/SkyNet.o C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/.data/SkyNet.xml
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xdpp=alloc --only-section=.xdpp C:/Users/zhangqx/workspace/SDSoC/skynet/Release/src/SkyNet.o C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/.pp/SkyNet.ii
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xdfcnmap=alloc --only-section=.xdfcnmap C:/Users/zhangqx/workspace/SDSoC/skynet/Release/src/SkyNet.o C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/.cdb/SkyNet.SkyNet.fcnmap.xml
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xdhlscore=alloc --only-section=.xdhlscore C:/Users/zhangqx/workspace/SDSoC/skynet/Release/src/SkyNet.o C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/xilinx_com_hls_SkyNet_1_0.zip
+C:/Xilinx/SDx/2019.1/bin/unzip.bat -u -o C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/xilinx_com_hls_SkyNet_1_0.zip -d C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0
+Archive:  C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/xilinx_com_hls_SkyNet_1_0.zip
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/component.xml  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/constraints/a0_SkyNet_ooc.xdc  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/verilog/a0_ACTIVATION.v  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/verilog/a0_CLR_FM.v  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/verilog/a0_Compute_BBOX.v  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/verilog/a0_DWCONV3X3.v  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/verilog/a0_Export_BBOX.v  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/verilog/a0_Export_CONV.v  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/verilog/a0_Export_CONV1.v  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/verilog/a0_Load_BBUF.v  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/verilog/a0_Load_BBUF_1.v  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/verilog/a0_Load_FM.v  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/verilog/a0_Load_FM1.v  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/verilog/a0_Load_FM_1.v  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/verilog/a0_Load_IMG.v  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/verilog/a0_Load_WBUF1x1.v  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/verilog/a0_Load_WBUF3x3.v  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/verilog/a0_Load_WBUF3x3_1.v  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/verilog/a0_POOL.v  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/verilog/a0_POOL_1.v  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/verilog/a0_PWCONV1X1.v  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/verilog/a0_PWCONV1X1_1.v  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/verilog/a0_PWCONV1X1_1_A_bufkbM.v  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/verilog/a0_REORG.v  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/verilog/a0_SkyNet_ama_addmulGfk.v  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/verilog/a0_SkyNet_ama_addmulZio.v  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/verilog/a0_SkyNet_AXILiteS_s_axi.v  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/verilog/a0_SkyNet_BBUF_0.v  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/verilog/a0_SkyNet_BBUF_0_ram.dat  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/verilog/a0_SkyNet_bm_m_axi.v  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/verilog/a0_SkyNet_FM1_0.v  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/verilog/a0_SkyNet_FM1_0_ram.dat  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/verilog/a0_SkyNet_FM4_0.v  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/verilog/a0_SkyNet_FM4_0_ram.dat  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/verilog/a0_SkyNet_fm_m_axi.v  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/verilog/a0_SkyNet_img_m_axi.v  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/verilog/a0_SkyNet_mac_muladd0iy.v  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/verilog/a0_SkyNet_mac_muladd2iS.v  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/verilog/a0_SkyNet_mac_muladd5jm.v  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/verilog/a0_SkyNet_mac_muladdCeG.v  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/verilog/a0_SkyNet_mac_muladdcud.v  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/verilog/a0_SkyNet_mac_muladdDeQ.v  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/verilog/a0_SkyNet_mac_muladdEe0.v  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/verilog/a0_SkyNet_mac_muladdeOg.v  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/verilog/a0_SkyNet_mac_muladdfYi.v  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/verilog/a0_SkyNet_mac_muladdg8j.v  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/verilog/a0_SkyNet_mac_muladdhbi.v  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/verilog/a0_SkyNet_mac_muladdYie.v  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/verilog/a0_SkyNet_mul_mul_11jbC.v  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/verilog/a0_SkyNet_mul_mul_131iI.v  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/verilog/a0_SkyNet_mux_42_32_3i2.v  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/verilog/a0_SkyNet_mux_42_2564jc.v  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/verilog/a0_SkyNet_mux_83_32_Aem.v  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/verilog/a0_SkyNet_mux_325_32Bew.v  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/verilog/a0_SkyNet_sdiv_32ns_ibs.v  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/verilog/a0_SkyNet_udiv_3ns_3Xh4.v  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/verilog/a0_SkyNet_urem_4ns_3bkb.v  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/verilog/a0_SkyNet_urem_10ns_Ffa.v  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/verilog/a0_SkyNet_urem_12ns_dEe.v  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/verilog/a0_SkyNet_WBUF1x1_0.v  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/verilog/a0_SkyNet_WBUF1x1_0_ram.dat  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/verilog/a0_SkyNet_WBUF3x3_0.v  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/verilog/a0_SkyNet_WBUF3x3_0_ram.dat  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/verilog/a0_SkyNet_wt_m_axi.v  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/verilog/a0_SkyNet.v  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/vhdl/a0_ACTIVATION.vhd  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/vhdl/a0_CLR_FM.vhd  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/vhdl/a0_Compute_BBOX.vhd  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/vhdl/a0_DWCONV3X3.vhd  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/vhdl/a0_Export_BBOX.vhd  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/vhdl/a0_Export_CONV.vhd  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/vhdl/a0_Export_CONV1.vhd  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/vhdl/a0_Load_BBUF.vhd  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/vhdl/a0_Load_BBUF_1.vhd  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/vhdl/a0_Load_FM.vhd  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/vhdl/a0_Load_FM1.vhd  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/vhdl/a0_Load_FM_1.vhd  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/vhdl/a0_Load_IMG.vhd  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/vhdl/a0_Load_WBUF1x1.vhd  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/vhdl/a0_Load_WBUF3x3.vhd  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/vhdl/a0_Load_WBUF3x3_1.vhd  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/vhdl/a0_POOL.vhd  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/vhdl/a0_POOL_1.vhd  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/vhdl/a0_PWCONV1X1.vhd  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/vhdl/a0_PWCONV1X1_1.vhd  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/vhdl/a0_PWCONV1X1_1_A_bufkbM.vhd  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/vhdl/a0_REORG.vhd  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/vhdl/a0_SkyNet_ama_addmulGfk.vhd  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/vhdl/a0_SkyNet_ama_addmulZio.vhd  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/vhdl/a0_SkyNet_AXILiteS_s_axi.vhd  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/vhdl/a0_SkyNet_BBUF_0.vhd  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/vhdl/a0_SkyNet_bm_m_axi.vhd  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/vhdl/a0_SkyNet_FM1_0.vhd  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/vhdl/a0_SkyNet_FM4_0.vhd  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/vhdl/a0_SkyNet_fm_m_axi.vhd  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/vhdl/a0_SkyNet_img_m_axi.vhd  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/vhdl/a0_SkyNet_mac_muladd0iy.vhd  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/vhdl/a0_SkyNet_mac_muladd2iS.vhd  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/vhdl/a0_SkyNet_mac_muladd5jm.vhd  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/vhdl/a0_SkyNet_mac_muladdCeG.vhd  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/vhdl/a0_SkyNet_mac_muladdcud.vhd  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/vhdl/a0_SkyNet_mac_muladdDeQ.vhd  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/vhdl/a0_SkyNet_mac_muladdEe0.vhd  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/vhdl/a0_SkyNet_mac_muladdeOg.vhd  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/vhdl/a0_SkyNet_mac_muladdfYi.vhd  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/vhdl/a0_SkyNet_mac_muladdg8j.vhd  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/vhdl/a0_SkyNet_mac_muladdhbi.vhd  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/vhdl/a0_SkyNet_mac_muladdYie.vhd  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/vhdl/a0_SkyNet_mul_mul_11jbC.vhd  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/vhdl/a0_SkyNet_mul_mul_131iI.vhd  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/vhdl/a0_SkyNet_mux_42_32_3i2.vhd  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/vhdl/a0_SkyNet_mux_42_2564jc.vhd  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/vhdl/a0_SkyNet_mux_83_32_Aem.vhd  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/vhdl/a0_SkyNet_mux_325_32Bew.vhd  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/vhdl/a0_SkyNet_sdiv_32ns_ibs.vhd  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/vhdl/a0_SkyNet_udiv_3ns_3Xh4.vhd  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/vhdl/a0_SkyNet_urem_4ns_3bkb.vhd  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/vhdl/a0_SkyNet_urem_10ns_Ffa.vhd  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/vhdl/a0_SkyNet_urem_12ns_dEe.vhd  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/vhdl/a0_SkyNet_WBUF1x1_0.vhd  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/vhdl/a0_SkyNet_WBUF3x3_0.vhd  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/vhdl/a0_SkyNet_wt_m_axi.vhd  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/hdl/vhdl/a0_SkyNet.vhd  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/drivers/a0_SkyNet_v1_0/data/a0_SkyNet.mdd  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/drivers/a0_SkyNet_v1_0/data/a0_SkyNet.tcl  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/drivers/a0_SkyNet_v1_0/src/Makefile  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/drivers/a0_SkyNet_v1_0/src/xa0_skynet.c  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/drivers/a0_SkyNet_v1_0/src/xa0_skynet.h  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/drivers/a0_SkyNet_v1_0/src/xa0_skynet_hw.h  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/drivers/a0_SkyNet_v1_0/src/xa0_skynet_linux.c  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/drivers/a0_SkyNet_v1_0/src/xa0_skynet_sinit.c  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/doc/ReleaseNotes.txt  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/misc/logo.png  
+  inflating: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/xgui/SkyNet_v1_0.tcl  
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xdinfo=alloc --only-section=.xdinfo C:/Users/zhangqx/workspace/SDSoC/skynet/Release/src/main.o C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/.data/xdinfo.xml
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xddata=alloc --only-section=.xddata C:/Users/zhangqx/workspace/SDSoC/skynet/Release/src/main.o C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/.data/xddata.xml
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xdsdata=alloc --only-section=.xdsdata C:/Users/zhangqx/workspace/SDSoC/skynet/Release/src/main.o C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/.data/main.o.xml
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xdinfo=alloc --only-section=.xdinfo C:/Users/zhangqx/workspace/SDSoC/skynet/Release/src/transform.o C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/.data/xdinfo.xml
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xddata=alloc --only-section=.xddata C:/Users/zhangqx/workspace/SDSoC/skynet/Release/src/transform.o C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/.data/xddata.xml
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xdsdata=alloc --only-section=.xdsdata C:/Users/zhangqx/workspace/SDSoC/skynet/Release/src/transform.o C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/.data/transform.o.xml
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xdinfo=alloc --only-section=.xdinfo C:/Users/zhangqx/workspace/SDSoC/skynet/Release/src/utils.o C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/.data/xdinfo.xml
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xddata=alloc --only-section=.xddata C:/Users/zhangqx/workspace/SDSoC/skynet/Release/src/utils.o C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/.data/xddata.xml
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xdsdata=alloc --only-section=.xdsdata C:/Users/zhangqx/workspace/SDSoC/skynet/Release/src/utils.o C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/.data/utils.o.xml
+C:/Xilinx/SDx/2019.1/bin/build_xd_ip_db -ip_search 0  -sds-pf C:/Users/zhangqx/workspace/SDSoC/skynet/Release/.Xil/zcu104.hpfm  -ip C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0  -o C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/.cdb/xd_ip_db.xml  
+INFO: Using user-defined path for XILINX_XD environment variable C:/Xilinx/SDx/2019.1
+processing accelerators: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0
+ip_dir: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0
+C:/Xilinx/SDx/2019.1/bin/xsltproc --stringparam xpath "spirit:component/spirit:name/text()" C:/Xilinx/SDx/2019.1/scripts/xdcc/xpathValueOf.xsl C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo/xilinx_com_hls_SkyNet_1_0/component.xml
+ip_name: SkyNet
+Generating data motion network
+C:/Xilinx/SDx/2019.1/bin/llvm-link -o C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/.llvm/sds_all.o C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/.llvm/./src/SkyNet.s C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/.llvm/./src/main.s C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/.llvm/./src/transform.s C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/.llvm/./src/utils.s
+
+C:\Users\zhangqx\workspace\SDSoC\skynet\Release>C:\Xilinx\SDx\2019.1\llvm-clang\win64\llvm\bin\llvm-link.exe -o C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/.llvm/sds_all.o C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/.llvm/./src/SkyNet.s C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/.llvm/./src/main.s C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/.llvm/./src/transform.s C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/.llvm/./src/utils.s 
+
+C:\Users\zhangqx\workspace\SDSoC\skynet\Release>exit /b 0 
+C:/Xilinx/SDx/2019.1/bin/XidanePass  --dmclkid 2  --repo C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/.cdb/xd_ip_db.xml  --dmdb C:/Xilinx/SDx/2019.1/data/DM.db   -os linux -processor cortex-a53 -partition 0  
+
+C:\Users\zhangqx\workspace\SDSoC\skynet\Release\_sds\.llvm>opt -disable-output -mem2reg -basicaa -XidanePass --dmclkid 2 --repo C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/.cdb/xd_ip_db.xml --dmdb C:/Xilinx/SDx/2019.1/data/DM.db -os linux -processor cortex-a53 -partition 0  0<sds_all.o 
+INFO: [DMAnalysis 83-4494] Analyzing hardware accelerators...
+INFO: [DMAnalysis 83-4497] Analyzing callers to hardware accelerators...
+INFO: [DMAnalysis 83-4444] Scheduling data transfer graph for partition 0
+INFO: [DMAnalysis 83-4446] Creating data motion network hardware for partition 0
+INFO: [DMAnalysis 83-4448] Creating software stub functions for partition 0
+INFO: [DMAnalysis 83-4450] Generating data motion network report for partition 0
+INFO: [DMAnalysis 83-4454] Rewriting caller code
+Removing implementation files from previous run C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/p0/vivado
+Removing implementation files from previous run C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/p0/vpl
+Creating block diagram (BD)
+C:/Xilinx/SDx/2019.1/bin/sdx_link  -cf-system C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/.llvm/apsys_0.xml  -cf-db  C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/.cdb/xd_ip_db.xml  -xpfm C:/Xilinx/SDx/2019.1/platforms/zcu104/zcu104.xpfm   -multi-clks -trace-buffer 1024 -os linux -quiet
+Creating top.bd.tcl
+C:/Xilinx/SDx/2019.1/bin/cf2sw  -i C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/.llvm/apsys_0.xml  -r C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/.cdb/xd_ip_db.xml  -pollMode 0 -mc
+Rewrite caller functions
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xdinfo=alloc --only-section=.xdinfo C:/Users/zhangqx/workspace/SDSoC/skynet/Release/src/main.o C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/.data/xdinfo.xml
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xddata=alloc --only-section=.xddata C:/Users/zhangqx/workspace/SDSoC/skynet/Release/src/main.o C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/.data/xddata.xml
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xdsdata=alloc --only-section=.xdsdata C:/Users/zhangqx/workspace/SDSoC/skynet/Release/src/main.o C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/.data/main.o.xml
+C:/Xilinx/SDx/2019.1/bin/caller_rewrite  -rewrite C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/.llvm/caller0.cfrewrite  -o C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/swstubs/main.cpp  C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/swstubs/unix_main.cpp  --  -c  -IC:/Users/zhangqx/workspace/SDSoC/skynet/src -IC:/Users/zhangqx/workspace/SDSoC/skynet/src -Wall -O3 -fmessage-length=0 -MMD -MP -D __SDSCC__  -target aarch64-linux-gnu -mcpu=cortex-a53 -O0 -g -w      -I C:/Xilinx/SDx/2019.1/target/aarch64-linux/include  -D HLS_NO_XIL_FPO_LIB  -I C:/Xilinx/Vivado/2019.1/include   -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include/c++/8.2.0 -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include/c++/8.2.0/aarch64-linux-gnu -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include/c++/8.2.0/backward -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/lib/gcc/aarch64-linux-gnu/8.2.0/include -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/lib/gcc/aarch64-linux-gnu/8.2.0/include-fixed -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/libc/usr/include  -std=c++11
+Compile caller rewrite file C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/swstubs/main.cpp
+aarch64-linux-gnu-g++  -c C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/swstubs/main.cpp  -IC:/Users/zhangqx/workspace/SDSoC/skynet/src -IC:/Users/zhangqx/workspace/SDSoC/skynet/src -Wall -O3 -fmessage-length=0 -MMD -MP -D __SDSCC__        -I C:/Xilinx/SDx/2019.1/target/aarch64-linux/include  -D HLS_NO_XIL_FPO_LIB  -I C:/Xilinx/Vivado/2019.1/include  -o C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/swstubs/main.o
+C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/swstubs/main.cpp: In function 'int main()':
+C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/swstubs/main.cpp:109:7: warning: variable 'conv' set but not used [-Wunused-but-set-variable]
+  SDT* conv[4];
+       ^~~~
+Prepare hardware access API functions
+Create accelerator stub functions
+C:/Xilinx/SDx/2019.1/bin/stub_gen  -func "SkyNet" -stub C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/.llvm/SkyNet.cfrewrite  -o C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/swstubs/SkyNet.cpp  C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/swstubs/unix_SkyNet.cpp  --  -c  -IC:/Users/zhangqx/workspace/SDSoC/skynet/src -IC:/Users/zhangqx/workspace/SDSoC/skynet/src -Wall -O3 -fmessage-length=0 -MMD -MP -D __SDSCC__  -target aarch64-linux-gnu -mcpu=cortex-a53 -O0 -g -w      -I C:/Xilinx/SDx/2019.1/target/aarch64-linux/include  -D HLS_NO_XIL_FPO_LIB  -I C:/Xilinx/Vivado/2019.1/include   -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include/c++/8.2.0 -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include/c++/8.2.0/aarch64-linux-gnu -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include/c++/8.2.0/backward -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/lib/gcc/aarch64-linux-gnu/8.2.0/include -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/lib/gcc/aarch64-linux-gnu/8.2.0/include-fixed -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include -IC:/Xilinx/SDK/2019.1/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/libc/usr/include  -std=c++11
+Compile hardware access API functions
+aarch64-linux-gnu-gcc         -I C:/Xilinx/SDx/2019.1/target/aarch64-linux/include  -D HLS_NO_XIL_FPO_LIB  -I C:/Xilinx/Vivado/2019.1/include -c  C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/swstubs/portinfo.c
+aarch64-linux-gnu-g++        -I C:/Xilinx/SDx/2019.1/target/aarch64-linux/include  -D HLS_NO_XIL_FPO_LIB  -I C:/Xilinx/Vivado/2019.1/include -c  C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/swstubs/cf_stub.c
+aarch64-linux-gnu-ar crs C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/swstubs/libxlnk_stub.a C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/swstubs/portinfo.o C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/swstubs/cf_stub.o
+Compile accelerator stub functions
+aarch64-linux-gnu-g++ -c SkyNet.cpp  -IC:/Users/zhangqx/workspace/SDSoC/skynet/src -IC:/Users/zhangqx/workspace/SDSoC/skynet/src -Wall -O3 -fmessage-length=0 -MMD -MP -D __SDSCC__        -I C:/Xilinx/SDx/2019.1/target/aarch64-linux/include  -D HLS_NO_XIL_FPO_LIB  -I C:/Xilinx/Vivado/2019.1/include -o SkyNet.o
+SkyNet.cpp: In function 'void ACTIVATION(SDT (*)[43][83], ADT (*)[43][83], BDT*, MDT*)':
+SkyNet.cpp:452:21: warning: suggest parentheses around comparison in operand of '|' [-Wparentheses]
+                 if(h==0|h==42|w==0|w==82)
+                    ~^~~
+SkyNet.cpp:452:32: warning: suggest parentheses around comparison in operand of '|' [-Wparentheses]
+                 if(h==0|h==42|w==0|w==82)
+                               ~^~~
+SkyNet.cpp:452:37: warning: suggest parentheses around comparison in operand of '|' [-Wparentheses]
+                 if(h==0|h==42|w==0|w==82)
+                                    ~^~~~
+                 from C:/Xilinx/Vivado/2019.1/include/ap_int.h:54,
+                 from C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.h:14,
+                 from SkyNet.cpp:1:
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h: In instantiation of 'void ap_private<_AP_W, _AP_S, true>::clearUnusedBits() volatile [with int _AP_W = 7; bool _AP_S = false]':
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:1485:1:   required from 'ap_private<_AP_W, _AP_S, true>& ap_private<_AP_W, _AP_S, true>::operator=(int) [with int _AP_W = 7; bool _AP_S = false]'
+C:/Xilinx/Vivado/2019.1/include/ap_int.h:301:3:   required from 'ap_uint<_AP_W>::ap_uint(int) [with int _AP_W = 7]'
+SkyNet.cpp:40:25:   required from here
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:2144:28: warning: enum constant in boolean context [-Wint-in-bool-context]
+             : (excess_bits ? (((uint64_t)VAL) << (excess_bits)) >> (excess_bits)
+               ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                            : (uint64_t)VAL));
+                            ~~~~~~~~~~~~~~~~
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h: In instantiation of 'void ap_private<_AP_W, _AP_S, true>::clearUnusedBits() volatile [with int _AP_W = 2; bool _AP_S = false]':
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:1485:1:   required from 'ap_private<_AP_W, _AP_S, true>& ap_private<_AP_W, _AP_S, true>::operator=(int) [with int _AP_W = 2; bool _AP_S = false]'
+C:/Xilinx/Vivado/2019.1/include/ap_int.h:301:3:   required from 'ap_uint<_AP_W>::ap_uint(int) [with int _AP_W = 2]'
+SkyNet.cpp:48:56:   required from here
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:2144:28: warning: enum constant in boolean context [-Wint-in-bool-context]
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h: In instantiation of 'void ap_private<_AP_W, _AP_S, true>::clearUnusedBits() volatile [with int _AP_W = 40; bool _AP_S = true]':
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:1426:5:   required from 'ap_private<_AP_W, _AP_S>& ap_private<_AP_W, _AP_S, true>::operator=(const ap_private<_AP_W1, _AP_S1>&) [with int _AP_W1 = 41; bool _AP_S1 = true; int _AP_W = 40; bool _AP_S = true]'
+C:/Xilinx/Vivado/2019.1/include/ap_int_base.h:1354:1:   required from 'typename ap_int_base<_AP_W, _AP_S>::RType<_AP_W2, _AP_S2>::minus operator-(const ap_int_base<_AP_W2, _AP_S2>&, const ap_int_base<_AP_W3, _AP_S3>&) [with int _AP_W = 39; bool _AP_S = true; int _AP_W2 = 2; bool _AP_S2 = false; typename ap_int_base<_AP_W, _AP_S>::RType<_AP_W2, _AP_S2>::minus = ap_int<40>]'
+SkyNet.cpp:50:42:   required from here
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:2144:28: warning: enum constant in boolean context [-Wint-in-bool-context]
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h: In instantiation of 'void ap_private<_AP_W, _AP_S, true>::clearUnusedBits() volatile [with int _AP_W = 10; bool _AP_S = false]':
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:1426:5:   required from 'ap_private<_AP_W, _AP_S>& ap_private<_AP_W, _AP_S, true>::operator=(const ap_private<_AP_W1, _AP_S1>&) [with int _AP_W1 = 40; bool _AP_S1 = true; int _AP_W = 10; bool _AP_S = false]'
+C:/Xilinx/Vivado/2019.1/include/ap_int.h:214:13:   required from 'ap_uint<_AP_W>::ap_uint(const ap_int<_AP_W2>&) [with int _AP_W2 = 40; int _AP_W = 10]'
+SkyNet.cpp:50:42:   required from here
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:2144:28: warning: enum constant in boolean context [-Wint-in-bool-context]
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h: In instantiation of 'void ap_private<_AP_W, _AP_S, false>::clearUnusedBits() volatile [with int _AP_W = 70; bool _AP_S = true]':
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:3279:7:   required from 'ap_private<_AP_W, _AP_S, false>::ap_private(const ap_private<_AP_W, _AP_S, false>&) [with int _AP_W = 70; bool _AP_S = true]'
+C:/Xilinx/Vivado/2019.1/include/ap_common.h:634:8:   required from 'typename ap_int_base<_AP_W, _AP_S>::RType<_AP_SIZE_int, true>::mult operator*(const ap_int_base<_AP_W2, _AP_S2>&, int) [with int _AP_W = 38; bool _AP_S = true; typename ap_int_base<_AP_W, _AP_S>::RType<_AP_SIZE_int, true>::mult = ap_int<70>]'
+SkyNet.cpp:52:51:   required from here
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:3427:22: warning: enum constant in boolean context [-Wint-in-bool-context]
+               : (excess_bits
+                 ~~~~~~~~~~~~
+                      ? ((pVal[_AP_N - 1]) << (excess_bits)) >> (excess_bits)
+                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                      : pVal[_AP_N - 1]);
+                      ~~~~~~~~~~~~~~~~~~
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h: In instantiation of 'void ap_private<_AP_W, _AP_S, false>::clearUnusedBits() volatile [with int _AP_W = 72; bool _AP_S = true]':
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:3889:5:   required from 'typename ap_private<_AP_W, _AP_S, false>::RType<_AP_W2, _AP_S2>::plus ap_private<_AP_W, _AP_S, false>::operator+(const ap_private<_AP_W1, _AP_S1>&) const [with int _AP_W1 = 71; bool _AP_S1 = true; int _AP_W = 71; bool _AP_S = true; typename ap_private<_AP_W, _AP_S, false>::RType<_AP_W2, _AP_S2>::plus = ap_private<72, true, false>]'
+C:/Xilinx/Vivado/2019.1/include/ap_int_base.h:1353:1:   required from 'typename ap_int_base<_AP_W, _AP_S>::RType<_AP_W2, _AP_S2>::plus operator+(const ap_int_base<_AP_W2, _AP_S2>&, const ap_int_base<_AP_W3, _AP_S3>&) [with int _AP_W = 70; bool _AP_S = true; int _AP_W2 = 42; bool _AP_S2 = true; typename ap_int_base<_AP_W, _AP_S>::RType<_AP_W2, _AP_S2>::plus = ap_int<71>]'
+SkyNet.cpp:52:62:   required from here
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:3427:22: warning: enum constant in boolean context [-Wint-in-bool-context]
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h: In instantiation of 'void ap_private<_AP_W, _AP_S, false>::clearUnusedBits() volatile [with int _AP_W = 71; bool _AP_S = true]':
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:4600:5:   required from 'ap_private<_AP_W, _AP_S, false>& ap_private<_AP_W, _AP_S, false>::operator=(const ap_private<_AP_W1, _AP_S1>&) [with int _AP_W1 = 72; bool _AP_S1 = true; int _AP_W = 71; bool _AP_S = true]'
+C:/Xilinx/Vivado/2019.1/include/ap_int_base.h:1353:1:   required from 'typename ap_int_base<_AP_W, _AP_S>::RType<_AP_W2, _AP_S2>::plus operator+(const ap_int_base<_AP_W2, _AP_S2>&, const ap_int_base<_AP_W3, _AP_S3>&) [with int _AP_W = 70; bool _AP_S = true; int _AP_W2 = 42; bool _AP_S2 = true; typename ap_int_base<_AP_W, _AP_S>::RType<_AP_W2, _AP_S2>::plus = ap_int<71>]'
+SkyNet.cpp:52:62:   required from here
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:3427:22: warning: enum constant in boolean context [-Wint-in-bool-context]
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h: In instantiation of 'void ap_private<_AP_W, _AP_S, false>::clearUnusedBits() volatile [with int _AP_W = 73; bool _AP_S = true]':
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:3889:5:   required from 'typename ap_private<_AP_W, _AP_S, false>::RType<_AP_W2, _AP_S2>::plus ap_private<_AP_W, _AP_S, false>::operator+(const ap_private<_AP_W1, _AP_S1>&) const [with int _AP_W1 = 72; bool _AP_S1 = true; int _AP_W = 72; bool _AP_S = true; typename ap_private<_AP_W, _AP_S, false>::RType<_AP_W2, _AP_S2>::plus = ap_private<73, true, false>]'
+C:/Xilinx/Vivado/2019.1/include/ap_int_base.h:1353:1:   required from 'typename ap_int_base<_AP_W, _AP_S>::RType<_AP_W2, _AP_S2>::plus operator+(const ap_int_base<_AP_W2, _AP_S2>&, const ap_int_base<_AP_W3, _AP_S3>&) [with int _AP_W = 71; bool _AP_S = true; int _AP_W2 = 10; bool _AP_S2 = false; typename ap_int_base<_AP_W, _AP_S>::RType<_AP_W2, _AP_S2>::plus = ap_int<72>]'
+SkyNet.cpp:52:68:   required from here
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:3427:22: warning: enum constant in boolean context [-Wint-in-bool-context]
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h: In instantiation of 'void ap_private<_AP_W, _AP_S, true>::clearUnusedBits() volatile [with int _AP_W = 20; bool _AP_S = false]':
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:1426:5:   required from 'ap_private<_AP_W, _AP_S>& ap_private<_AP_W, _AP_S, true>::operator=(const ap_private<_AP_W1, _AP_S1>&) [with int _AP_W1 = 72; bool _AP_S1 = true; int _AP_W = 20; bool _AP_S = false]'
+C:/Xilinx/Vivado/2019.1/include/ap_int.h:214:13:   required from 'ap_uint<_AP_W>::ap_uint(const ap_int<_AP_W2>&) [with int _AP_W2 = 72; int _AP_W = 20]'
+SkyNet.cpp:52:68:   required from here
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:2144:28: warning: enum constant in boolean context [-Wint-in-bool-context]
+             : (excess_bits ? (((uint64_t)VAL) << (excess_bits)) >> (excess_bits)
+               ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                            : (uint64_t)VAL));
+                            ~~~~~~~~~~~~~~~~
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h: In instantiation of 'void ap_private<_AP_W, _AP_S, true>::clearUnusedBits() volatile [with int _AP_W = 6; bool _AP_S = false]':
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:1485:1:   required from 'ap_private<_AP_W, _AP_S, true>& ap_private<_AP_W, _AP_S, true>::operator=(int) [with int _AP_W = 6; bool _AP_S = false]'
+C:/Xilinx/Vivado/2019.1/include/ap_int.h:301:3:   required from 'ap_uint<_AP_W>::ap_uint(int) [with int _AP_W = 6]'
+SkyNet.cpp:1070:48:   required from here
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:2144:28: warning: enum constant in boolean context [-Wint-in-bool-context]
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h: In instantiation of 'void ap_private<_AP_W, _AP_S, true>::clearUnusedBits() volatile [with int _AP_W = 3; bool _AP_S = false]':
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:1485:1:   required from 'ap_private<_AP_W, _AP_S, true>& ap_private<_AP_W, _AP_S, true>::operator=(int) [with int _AP_W = 3; bool _AP_S = false]'
+C:/Xilinx/Vivado/2019.1/include/ap_int.h:301:3:   required from 'ap_uint<_AP_W>::ap_uint(int) [with int _AP_W = 3]'
+SkyNet.cpp:1070:48:   required from here
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:2144:28: warning: enum constant in boolean context [-Wint-in-bool-context]
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h: In instantiation of 'void ap_private<_AP_W, _AP_S, true>::clearUnusedBits() volatile [with int _AP_W = 32; bool _AP_S = true]':
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:1485:1:   required from 'ap_private<_AP_W, _AP_S, true>& ap_private<_AP_W, _AP_S, true>::operator=(int) [with int _AP_W = 32; bool _AP_S = true]'
+C:/Xilinx/Vivado/2019.1/include/ap_int_base.h:243:3:   required from 'ap_int_base<_AP_W, _AP_S>::ap_int_base(int) [with int _AP_W = 32; bool _AP_S = true]'
+C:/Xilinx/Vivado/2019.1/include/ap_int_base.h:1598:1:   required from 'bool operator<=(const ap_int_base<_AP_W2, _AP_S2>&, int) [with int _AP_W = 7; bool _AP_S = false]'
+SkyNet.cpp:40:33:   required from here
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:2144:28: warning: enum constant in boolean context [-Wint-in-bool-context]
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h: In instantiation of 'void ap_private<_AP_W, _AP_S, true>::clearUnusedBits() volatile [with int _AP_W = 1; bool _AP_S = false]':
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:1485:1:   required from 'ap_private<_AP_W, _AP_S, true>& ap_private<_AP_W, _AP_S, true>::operator=(int) [with int _AP_W = 1; bool _AP_S = false]'
+C:/Xilinx/Vivado/2019.1/include/ap_int_base.h:243:3:   required from 'ap_int_base<_AP_W, _AP_S>::ap_int_base(int) [with int _AP_W = 1; bool _AP_S = false]'
+C:/Xilinx/Vivado/2019.1/include/ap_int_base.h:739:16:   required from 'const typename ap_int_base<_AP_W, _AP_S>::RType<_AP_W, _AP_S>::arg1 ap_int_base<_AP_W, _AP_S>::operator++(int) [with int _AP_W = 7; bool _AP_S = false; typename ap_int_base<_AP_W, _AP_S>::RType<_AP_W, _AP_S>::arg1 = ap_uint<7>]'
+SkyNet.cpp:40:38:   required from here
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:2144:28: warning: enum constant in boolean context [-Wint-in-bool-context]
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h: In instantiation of 'void ap_private<_AP_W, _AP_S, true>::clearUnusedBits() volatile [with int _AP_W = 39; bool _AP_S = true]':
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:1426:5:   required from 'ap_private<_AP_W, _AP_S>& ap_private<_AP_W, _AP_S, true>::operator=(const ap_private<_AP_W1, _AP_S1>&) [with int _AP_W1 = 78; bool _AP_S1 = true; int _AP_W = 39; bool _AP_S = true]'
+C:/Xilinx/Vivado/2019.1/include/ap_int_base.h:1352:1:   required from 'typename ap_int_base<_AP_W, _AP_S>::RType<_AP_W2, _AP_S2>::mult operator*(const ap_int_base<_AP_W2, _AP_S2>&, const ap_int_base<_AP_W3, _AP_S3>&) [with int _AP_W = 32; bool _AP_S = true; int _AP_W2 = 7; bool _AP_S2 = false; typename ap_int_base<_AP_W, _AP_S>::RType<_AP_W2, _AP_S2>::mult = ap_int<39>]'
+C:/Xilinx/Vivado/2019.1/include/ap_int_base.h:1467:1:   required from 'typename ap_int_base<_AP_W, _AP_S>::RType<_AP_SIZE_int, true>::mult operator*(int, const ap_int_base<_AP_W2, _AP_S2>&) [with int _AP_W = 7; bool _AP_S = false; typename ap_int_base<_AP_W, _AP_S>::RType<_AP_SIZE_int, true>::mult = ap_int<39>]'
+SkyNet.cpp:50:38:   required from here
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:2144:28: warning: enum constant in boolean context [-Wint-in-bool-context]
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h: In instantiation of 'void ap_private<_AP_W, _AP_S, true>::clearUnusedBits() volatile [with int _AP_W = 41; bool _AP_S = true]':
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:1649:3:   required from 'ap_private<_AP_W, _AP_S, true>::ap_private(long int) [with int _AP_W = 41; bool _AP_S = true]'
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:2082:46:   required from 'typename ap_private<_AP_W, _AP_S, true>::RType<_AP_W2, _AP_S2>::minus ap_private<_AP_W, _AP_S, true>::operator-(const ap_private<_AP_W1, _AP_S1>&) const [with int _AP_W1 = 40; bool _AP_S1 = true; int _AP_W = 40; bool _AP_S = true; typename ap_private<_AP_W, _AP_S, true>::RType<_AP_W2, _AP_S2>::minus = ap_private<41, true, true>]'
+C:/Xilinx/Vivado/2019.1/include/ap_int_base.h:1354:1:   required from 'typename ap_int_base<_AP_W, _AP_S>::RType<_AP_W2, _AP_S2>::minus operator-(const ap_int_base<_AP_W2, _AP_S2>&, const ap_int_base<_AP_W3, _AP_S3>&) [with int _AP_W = 39; bool _AP_S = true; int _AP_W2 = 2; bool _AP_S2 = false; typename ap_int_base<_AP_W, _AP_S>::RType<_AP_W2, _AP_S2>::minus = ap_int<40>]'
+SkyNet.cpp:50:42:   required from here
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:2144:28: warning: enum constant in boolean context [-Wint-in-bool-context]
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h: In instantiation of 'void ap_private<_AP_W, _AP_S, true>::clearUnusedBits() volatile [with int _AP_W = 38; bool _AP_S = true]':
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:1426:5:   required from 'ap_private<_AP_W, _AP_S>& ap_private<_AP_W, _AP_S, true>::operator=(const ap_private<_AP_W1, _AP_S1>&) [with int _AP_W1 = 76; bool _AP_S1 = true; int _AP_W = 38; bool _AP_S = true]'
+C:/Xilinx/Vivado/2019.1/include/ap_int_base.h:1352:1:   required from 'typename ap_int_base<_AP_W, _AP_S>::RType<_AP_W2, _AP_S2>::mult operator*(const ap_int_base<_AP_W2, _AP_S2>&, const ap_int_base<_AP_W3, _AP_S3>&) [with int _AP_W = 6; bool _AP_S = false; int _AP_W2 = 32; bool _AP_S2 = true; typename ap_int_base<_AP_W, _AP_S>::RType<_AP_W2, _AP_S2>::mult = ap_int<38>]'
+C:/Xilinx/Vivado/2019.1/include/ap_int_base.h:1467:1:   required from 'typename ap_int_base<_AP_W, _AP_S>::RType<_AP_SIZE_int, true>::mult operator*(const ap_int_base<_AP_W2, _AP_S2>&, int) [with int _AP_W = 6; bool _AP_S = false; typename ap_int_base<_AP_W, _AP_S>::RType<_AP_SIZE_int, true>::mult = ap_int<38>]'
+SkyNet.cpp:52:46:   required from here
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:2144:28: warning: enum constant in boolean context [-Wint-in-bool-context]
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h: In instantiation of 'void ap_private<_AP_W, _AP_S, true>::clearUnusedBits() volatile [with int _AP_W = 42; bool _AP_S = true]':
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:1426:5:   required from 'ap_private<_AP_W, _AP_S>& ap_private<_AP_W, _AP_S, true>::operator=(const ap_private<_AP_W1, _AP_S1>&) [with int _AP_W1 = 84; bool _AP_S1 = true; int _AP_W = 42; bool _AP_S = true]'
+C:/Xilinx/Vivado/2019.1/include/ap_int_base.h:1352:1:   required from 'typename ap_int_base<_AP_W, _AP_S>::RType<_AP_W2, _AP_S2>::mult operator*(const ap_int_base<_AP_W2, _AP_S2>&, const ap_int_base<_AP_W3, _AP_S3>&) [with int _AP_W = 10; bool _AP_S = false; int _AP_W2 = 32; bool _AP_S2 = true; typename ap_int_base<_AP_W, _AP_S>::RType<_AP_W2, _AP_S2>::mult = ap_int<42>]'
+C:/Xilinx/Vivado/2019.1/include/ap_int_base.h:1467:1:   required from 'typename ap_int_base<_AP_W, _AP_S>::RType<_AP_SIZE_int, true>::mult operator*(const ap_int_base<_AP_W2, _AP_S2>&, int) [with int _AP_W = 10; bool _AP_S = false; typename ap_int_base<_AP_W, _AP_S>::RType<_AP_SIZE_int, true>::mult = ap_int<42>]'
+SkyNet.cpp:52:62:   required from here
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:2144:28: warning: enum constant in boolean context [-Wint-in-bool-context]
+                 from C:/Xilinx/Vivado/2019.1/include/ap_int.h:54,
+                 from C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.h:14,
+                 from SkyNet.cpp:1:
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h: In instantiation of 'void ap_private<_AP_W, _AP_S, false>::cpSext(const ap_private<_AP_W1, _AP_S1>&) [with int _AP_W1 = 72; bool _AP_S1 = true; int _AP_W = 71; bool _AP_S = true]':
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:5334:7:   required from 'void ap_private<_AP_W, _AP_S, false>::cpSextOrTrunc(const ap_private<_AP_W1, _AP_S1>&) [with int _AP_W1 = 72; bool _AP_S1 = true; int _AP_W = 71; bool _AP_S = true]'
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:4597:7:   required from 'ap_private<_AP_W, _AP_S, false>& ap_private<_AP_W, _AP_S, false>::operator=(const ap_private<_AP_W1, _AP_S1>&) [with int _AP_W1 = 72; bool _AP_S1 = true; int _AP_W = 71; bool _AP_S = true]'
+C:/Xilinx/Vivado/2019.1/include/ap_int_base.h:1353:1:   required from 'typename ap_int_base<_AP_W, _AP_S>::RType<_AP_W2, _AP_S2>::plus operator+(const ap_int_base<_AP_W2, _AP_S2>&, const ap_int_base<_AP_W3, _AP_S3>&) [with int _AP_W = 70; bool _AP_S = true; int _AP_W2 = 42; bool _AP_S2 = true; typename ap_int_base<_AP_W, _AP_S>::RType<_AP_W2, _AP_S2>::plus = ap_int<71>]'
+SkyNet.cpp:52:62:   required from here
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:5291:45: warning: enum constant in boolean context [-Wint-in-bool-context]
+       static const uint64_t mask = wordBits ? (~0ULL << (wordBits)) : 0ULL;
+                                    ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:5299:43: warning: enum constant in boolean context [-Wint-in-bool-context]
+     static const uint64_t mask = wordBits ? (~0ULL << (wordBits)) : 0ULL;
+                                  ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h: In instantiation of 'void ap_private<_AP_W, _AP_S, false>::cpSext(const ap_private<_AP_W1, _AP_S1>&) [with int _AP_W1 = 73; bool _AP_S1 = true; int _AP_W = 72; bool _AP_S = true]':
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:5334:7:   required from 'void ap_private<_AP_W, _AP_S, false>::cpSextOrTrunc(const ap_private<_AP_W1, _AP_S1>&) [with int _AP_W1 = 73; bool _AP_S1 = true; int _AP_W = 72; bool _AP_S = true]'
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:4597:7:   required from 'ap_private<_AP_W, _AP_S, false>& ap_private<_AP_W, _AP_S, false>::operator=(const ap_private<_AP_W1, _AP_S1>&) [with int _AP_W1 = 73; bool _AP_S1 = true; int _AP_W = 72; bool _AP_S = true]'
+C:/Xilinx/Vivado/2019.1/include/ap_int_base.h:1353:1:   required from 'typename ap_int_base<_AP_W, _AP_S>::RType<_AP_W2, _AP_S2>::plus operator+(const ap_int_base<_AP_W2, _AP_S2>&, const ap_int_base<_AP_W3, _AP_S3>&) [with int _AP_W = 71; bool _AP_S = true; int _AP_W2 = 10; bool _AP_S2 = false; typename ap_int_base<_AP_W, _AP_S>::RType<_AP_W2, _AP_S2>::plus = ap_int<72>]'
+SkyNet.cpp:52:68:   required from here
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:5291:45: warning: enum constant in boolean context [-Wint-in-bool-context]
+       static const uint64_t mask = wordBits ? (~0ULL << (wordBits)) : 0ULL;
+                                    ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:5299:43: warning: enum constant in boolean context [-Wint-in-bool-context]
+     static const uint64_t mask = wordBits ? (~0ULL << (wordBits)) : 0ULL;
+                                  ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                 from C:/Xilinx/Vivado/2019.1/include/ap_int.h:54,
+                 from C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.h:14,
+                 from SkyNet.cpp:1:
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h: In instantiation of 'void ap_private<_AP_W, _AP_S, true>::clearUnusedBits() volatile [with int _AP_W = 32; bool _AP_S = false]':
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:1662:5:   required from 'ap_private<_AP_W, _AP_S, true>::ap_private(const ap_private<_AP_W1, _AP_S1, _AP_OPT>&) [with int _AP_W1 = 7; bool _AP_S1 = false; bool _AP_OPT = true; int _AP_W = 32; bool _AP_S = false]'
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:2599:34:   required from 'bool ap_private<_AP_W, _AP_S, true>::operator==(const ap_private<_AP_W1, _AP_S1>&) const [with int _AP_W1 = 32; bool _AP_S1 = true; int _AP_W = 7; bool _AP_S = false]'
+C:/Xilinx/Vivado/2019.1/include/ap_int_base.h:883:22:   required from 'bool ap_int_base<_AP_W, _AP_S>::operator!=(const ap_int_base<_AP_W2, _AP_S2>&) const [with int _AP_W2 = 32; bool _AP_S2 = true; int _AP_W = 7; bool _AP_S = false]'
+C:/Xilinx/Vivado/2019.1/include/ap_int_base.h:1598:1:   required from 'bool operator!=(const ap_int_base<_AP_W2, _AP_S2>&, int) [with int _AP_W = 7; bool _AP_S = false]'
+SkyNet.cpp:46:22:   required from here
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:2144:28: warning: enum constant in boolean context [-Wint-in-bool-context]
+             : (excess_bits ? (((uint64_t)VAL) << (excess_bits)) >> (excess_bits)
+               ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                            : (uint64_t)VAL));
+                            ~~~~~~~~~~~~~~~~
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h: In instantiation of 'void ap_private<_AP_W, _AP_S, false>::clearUnusedBits() volatile [with int _AP_W = 78; bool _AP_S = true]':
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:3372:3:   required from 'ap_private<_AP_W, _AP_S, false>::ap_private(long unsigned int, bool) [with int _AP_W = 78; bool _AP_S = true]'
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:2005:44:   required from 'typename ap_private<_AP_W, _AP_S, true>::RType<_AP_W2, _AP_S2>::mult ap_private<_AP_W, _AP_S, true>::operator*(const ap_private<_AP_W1, _AP_S1>&) const [with int _AP_W1 = 39; bool _AP_S1 = true; int _AP_W = 39; bool _AP_S = true; typename ap_private<_AP_W, _AP_S, true>::RType<_AP_W2, _AP_S2>::mult = ap_private<78, true, false>]'
+C:/Xilinx/Vivado/2019.1/include/ap_int_base.h:1352:1:   required from 'typename ap_int_base<_AP_W, _AP_S>::RType<_AP_W2, _AP_S2>::mult operator*(const ap_int_base<_AP_W2, _AP_S2>&, const ap_int_base<_AP_W3, _AP_S3>&) [with int _AP_W = 32; bool _AP_S = true; int _AP_W2 = 7; bool _AP_S2 = false; typename ap_int_base<_AP_W, _AP_S>::RType<_AP_W2, _AP_S2>::mult = ap_int<39>]'
+C:/Xilinx/Vivado/2019.1/include/ap_int_base.h:1467:1:   required from 'typename ap_int_base<_AP_W, _AP_S>::RType<_AP_SIZE_int, true>::mult operator*(int, const ap_int_base<_AP_W2, _AP_S2>&) [with int _AP_W = 7; bool _AP_S = false; typename ap_int_base<_AP_W, _AP_S>::RType<_AP_SIZE_int, true>::mult = ap_int<39>]'
+SkyNet.cpp:50:38:   required from here
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:3427:22: warning: enum constant in boolean context [-Wint-in-bool-context]
+               : (excess_bits
+                 ~~~~~~~~~~~~
+                      ? ((pVal[_AP_N - 1]) << (excess_bits)) >> (excess_bits)
+                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                      : pVal[_AP_N - 1]);
+                      ~~~~~~~~~~~~~~~~~~
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h: In instantiation of 'void ap_private<_AP_W, _AP_S, false>::clearUnusedBits() volatile [with int _AP_W = 76; bool _AP_S = true]':
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:3372:3:   required from 'ap_private<_AP_W, _AP_S, false>::ap_private(long unsigned int, bool) [with int _AP_W = 76; bool _AP_S = true]'
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:2005:44:   required from 'typename ap_private<_AP_W, _AP_S, true>::RType<_AP_W2, _AP_S2>::mult ap_private<_AP_W, _AP_S, true>::operator*(const ap_private<_AP_W1, _AP_S1>&) const [with int _AP_W1 = 38; bool _AP_S1 = true; int _AP_W = 38; bool _AP_S = true; typename ap_private<_AP_W, _AP_S, true>::RType<_AP_W2, _AP_S2>::mult = ap_private<76, true, false>]'
+C:/Xilinx/Vivado/2019.1/include/ap_int_base.h:1352:1:   required from 'typename ap_int_base<_AP_W, _AP_S>::RType<_AP_W2, _AP_S2>::mult operator*(const ap_int_base<_AP_W2, _AP_S2>&, const ap_int_base<_AP_W3, _AP_S3>&) [with int _AP_W = 6; bool _AP_S = false; int _AP_W2 = 32; bool _AP_S2 = true; typename ap_int_base<_AP_W, _AP_S>::RType<_AP_W2, _AP_S2>::mult = ap_int<38>]'
+C:/Xilinx/Vivado/2019.1/include/ap_int_base.h:1467:1:   required from 'typename ap_int_base<_AP_W, _AP_S>::RType<_AP_SIZE_int, true>::mult operator*(const ap_int_base<_AP_W2, _AP_S2>&, int) [with int _AP_W = 6; bool _AP_S = false; typename ap_int_base<_AP_W, _AP_S>::RType<_AP_SIZE_int, true>::mult = ap_int<38>]'
+SkyNet.cpp:52:46:   required from here
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:3427:22: warning: enum constant in boolean context [-Wint-in-bool-context]
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h: In instantiation of 'void ap_private<_AP_W, _AP_S, false>::clearUnusedBits() volatile [with int _AP_W = 140; bool _AP_S = true]':
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:3279:7:   required from 'ap_private<_AP_W, _AP_S, false>::ap_private(const ap_private<_AP_W, _AP_S, false>&) [with int _AP_W = 140; bool _AP_S = true]'
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:3907:42:   required from 'typename ap_private<_AP_W, _AP_S, false>::RType<_AP_W2, _AP_S2>::mult ap_private<_AP_W, _AP_S, false>::operator*(const ap_private<_AP_W1, _AP_S1>&) const [with int _AP_W1 = 70; bool _AP_S1 = true; int _AP_W = 70; bool _AP_S = true; typename ap_private<_AP_W, _AP_S, false>::RType<_AP_W2, _AP_S2>::mult = ap_private<140, true, false>]'
+C:/Xilinx/Vivado/2019.1/include/ap_int_base.h:1352:1:   required from 'typename ap_int_base<_AP_W, _AP_S>::RType<_AP_W2, _AP_S2>::mult operator*(const ap_int_base<_AP_W2, _AP_S2>&, const ap_int_base<_AP_W3, _AP_S3>&) [with int _AP_W = 38; bool _AP_S = true; int _AP_W2 = 32; bool _AP_S2 = true; typename ap_int_base<_AP_W, _AP_S>::RType<_AP_W2, _AP_S2>::mult = ap_int<70>]'
+C:/Xilinx/Vivado/2019.1/include/ap_int_base.h:1467:1:   required from 'typename ap_int_base<_AP_W, _AP_S>::RType<_AP_SIZE_int, true>::mult operator*(const ap_int_base<_AP_W2, _AP_S2>&, int) [with int _AP_W = 38; bool _AP_S = true; typename ap_int_base<_AP_W, _AP_S>::RType<_AP_SIZE_int, true>::mult = ap_int<70>]'
+SkyNet.cpp:52:51:   required from here
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:3427:22: warning: enum constant in boolean context [-Wint-in-bool-context]
+                 from C:/Xilinx/Vivado/2019.1/include/ap_int.h:54,
+                 from C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.h:14,
+                 from SkyNet.cpp:1:
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h: In instantiation of 'void ap_private<_AP_W, _AP_S, false>::cpSext(const ap_private<_AP_W1, _AP_S1>&) [with int _AP_W1 = 140; bool _AP_S1 = true; int _AP_W = 70; bool _AP_S = true]':
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:5334:7:   required from 'void ap_private<_AP_W, _AP_S, false>::cpSextOrTrunc(const ap_private<_AP_W1, _AP_S1>&) [with int _AP_W1 = 140; bool _AP_S1 = true; int _AP_W = 70; bool _AP_S = true]'
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:4597:7:   required from 'ap_private<_AP_W, _AP_S, false>& ap_private<_AP_W, _AP_S, false>::operator=(const ap_private<_AP_W1, _AP_S1>&) [with int _AP_W1 = 140; bool _AP_S1 = true; int _AP_W = 70; bool _AP_S = true]'
+C:/Xilinx/Vivado/2019.1/include/ap_int_base.h:1352:1:   required from 'typename ap_int_base<_AP_W, _AP_S>::RType<_AP_W2, _AP_S2>::mult operator*(const ap_int_base<_AP_W2, _AP_S2>&, const ap_int_base<_AP_W3, _AP_S3>&) [with int _AP_W = 38; bool _AP_S = true; int _AP_W2 = 32; bool _AP_S2 = true; typename ap_int_base<_AP_W, _AP_S>::RType<_AP_W2, _AP_S2>::mult = ap_int<70>]'
+C:/Xilinx/Vivado/2019.1/include/ap_int_base.h:1467:1:   required from 'typename ap_int_base<_AP_W, _AP_S>::RType<_AP_SIZE_int, true>::mult operator*(const ap_int_base<_AP_W2, _AP_S2>&, int) [with int _AP_W = 38; bool _AP_S = true; typename ap_int_base<_AP_W, _AP_S>::RType<_AP_SIZE_int, true>::mult = ap_int<70>]'
+SkyNet.cpp:52:51:   required from here
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:5291:45: warning: enum constant in boolean context [-Wint-in-bool-context]
+       static const uint64_t mask = wordBits ? (~0ULL << (wordBits)) : 0ULL;
+                                    ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:5299:43: warning: enum constant in boolean context [-Wint-in-bool-context]
+     static const uint64_t mask = wordBits ? (~0ULL << (wordBits)) : 0ULL;
+                                  ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                 from C:/Xilinx/Vivado/2019.1/include/ap_int.h:54,
+                 from C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.h:14,
+                 from SkyNet.cpp:1:
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h: In instantiation of 'void ap_private<_AP_W, _AP_S, false>::clearUnusedBits() volatile [with int _AP_W = 84; bool _AP_S = true]':
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:3372:3:   required from 'ap_private<_AP_W, _AP_S, false>::ap_private(long unsigned int, bool) [with int _AP_W = 84; bool _AP_S = true]'
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:2005:44:   required from 'typename ap_private<_AP_W, _AP_S, true>::RType<_AP_W2, _AP_S2>::mult ap_private<_AP_W, _AP_S, true>::operator*(const ap_private<_AP_W1, _AP_S1>&) const [with int _AP_W1 = 42; bool _AP_S1 = true; int _AP_W = 42; bool _AP_S = true; typename ap_private<_AP_W, _AP_S, true>::RType<_AP_W2, _AP_S2>::mult = ap_private<84, true, false>]'
+C:/Xilinx/Vivado/2019.1/include/ap_int_base.h:1352:1:   required from 'typename ap_int_base<_AP_W, _AP_S>::RType<_AP_W2, _AP_S2>::mult operator*(const ap_int_base<_AP_W2, _AP_S2>&, const ap_int_base<_AP_W3, _AP_S3>&) [with int _AP_W = 10; bool _AP_S = false; int _AP_W2 = 32; bool _AP_S2 = true; typename ap_int_base<_AP_W, _AP_S>::RType<_AP_W2, _AP_S2>::mult = ap_int<42>]'
+C:/Xilinx/Vivado/2019.1/include/ap_int_base.h:1467:1:   required from 'typename ap_int_base<_AP_W, _AP_S>::RType<_AP_SIZE_int, true>::mult operator*(const ap_int_base<_AP_W2, _AP_S2>&, int) [with int _AP_W = 10; bool _AP_S = false; typename ap_int_base<_AP_W, _AP_S>::RType<_AP_SIZE_int, true>::mult = ap_int<42>]'
+SkyNet.cpp:52:62:   required from here
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:3427:22: warning: enum constant in boolean context [-Wint-in-bool-context]
+               : (excess_bits
+                 ~~~~~~~~~~~~
+                      ? ((pVal[_AP_N - 1]) << (excess_bits)) >> (excess_bits)
+                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                      : pVal[_AP_N - 1]);
+                      ~~~~~~~~~~~~~~~~~~
+                 from C:/Xilinx/Vivado/2019.1/include/ap_int.h:54,
+                 from C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.h:14,
+                 from SkyNet.cpp:1:
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h: In instantiation of 'void ap_private<_AP_W, _AP_S, false>::cpSext(const ap_private<_AP_W1, _AP_S1>&) [with int _AP_W1 = 70; bool _AP_S1 = true; int _AP_W = 71; bool _AP_S = true]':
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:5334:7:   required from 'void ap_private<_AP_W, _AP_S, false>::cpSextOrTrunc(const ap_private<_AP_W1, _AP_S1>&) [with int _AP_W1 = 70; bool _AP_S1 = true; int _AP_W = 71; bool _AP_S = true]'
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:4597:7:   required from 'ap_private<_AP_W, _AP_S, false>& ap_private<_AP_W, _AP_S, false>::operator=(const ap_private<_AP_W1, _AP_S1>&) [with int _AP_W1 = 70; bool _AP_S1 = true; int _AP_W = 71; bool _AP_S = true]'
+C:/Xilinx/Vivado/2019.1/include/ap_int_base.h:215:13:   required from 'ap_int_base<_AP_W, _AP_S>::ap_int_base(const ap_int_base<_AP_W2, _AP_S2>&) [with int _AP_W2 = 70; bool _AP_S2 = true; int _AP_W = 71; bool _AP_S = true]'
+C:/Xilinx/Vivado/2019.1/include/ap_int_base.h:1353:1:   required from 'typename ap_int_base<_AP_W, _AP_S>::RType<_AP_W2, _AP_S2>::plus operator+(const ap_int_base<_AP_W2, _AP_S2>&, const ap_int_base<_AP_W3, _AP_S3>&) [with int _AP_W = 70; bool _AP_S = true; int _AP_W2 = 42; bool _AP_S2 = true; typename ap_int_base<_AP_W, _AP_S>::RType<_AP_W2, _AP_S2>::plus = ap_int<71>]'
+SkyNet.cpp:52:62:   required from here
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:5291:45: warning: enum constant in boolean context [-Wint-in-bool-context]
+       static const uint64_t mask = wordBits ? (~0ULL << (wordBits)) : 0ULL;
+                                    ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:5299:43: warning: enum constant in boolean context [-Wint-in-bool-context]
+     static const uint64_t mask = wordBits ? (~0ULL << (wordBits)) : 0ULL;
+                                  ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h: In instantiation of 'void ap_private<_AP_W, _AP_S, false>::cpSext(const ap_private<_AP_W1, _AP_S1>&) [with int _AP_W1 = 42; bool _AP_S1 = true; int _AP_W = 71; bool _AP_S = true]':
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:5334:7:   required from 'void ap_private<_AP_W, _AP_S, false>::cpSextOrTrunc(const ap_private<_AP_W1, _AP_S1>&) [with int _AP_W1 = 42; bool _AP_S1 = true; int _AP_W = 71; bool _AP_S = true]'
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:4597:7:   required from 'ap_private<_AP_W, _AP_S, false>& ap_private<_AP_W, _AP_S, false>::operator=(const ap_private<_AP_W1, _AP_S1>&) [with int _AP_W1 = 42; bool _AP_S1 = true; int _AP_W = 71; bool _AP_S = true]'
+C:/Xilinx/Vivado/2019.1/include/ap_int_base.h:215:13:   required from 'ap_int_base<_AP_W, _AP_S>::ap_int_base(const ap_int_base<_AP_W2, _AP_S2>&) [with int _AP_W2 = 42; bool _AP_S2 = true; int _AP_W = 71; bool _AP_S = true]'
+C:/Xilinx/Vivado/2019.1/include/ap_int_base.h:1353:1:   required from 'typename ap_int_base<_AP_W, _AP_S>::RType<_AP_W2, _AP_S2>::plus operator+(const ap_int_base<_AP_W2, _AP_S2>&, const ap_int_base<_AP_W3, _AP_S3>&) [with int _AP_W = 70; bool _AP_S = true; int _AP_W2 = 42; bool _AP_S2 = true; typename ap_int_base<_AP_W, _AP_S>::RType<_AP_W2, _AP_S2>::plus = ap_int<71>]'
+SkyNet.cpp:52:62:   required from here
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:5291:45: warning: enum constant in boolean context [-Wint-in-bool-context]
+       static const uint64_t mask = wordBits ? (~0ULL << (wordBits)) : 0ULL;
+                                    ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:5299:43: warning: enum constant in boolean context [-Wint-in-bool-context]
+     static const uint64_t mask = wordBits ? (~0ULL << (wordBits)) : 0ULL;
+                                  ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h: In instantiation of 'void ap_private<_AP_W, _AP_S, false>::cpSext(const ap_private<_AP_W1, _AP_S1>&) [with int _AP_W1 = 71; bool _AP_S1 = true; int _AP_W = 72; bool _AP_S = true]':
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:5334:7:   required from 'void ap_private<_AP_W, _AP_S, false>::cpSextOrTrunc(const ap_private<_AP_W1, _AP_S1>&) [with int _AP_W1 = 71; bool _AP_S1 = true; int _AP_W = 72; bool _AP_S = true]'
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:4597:7:   required from 'ap_private<_AP_W, _AP_S, false>& ap_private<_AP_W, _AP_S, false>::operator=(const ap_private<_AP_W1, _AP_S1>&) [with int _AP_W1 = 71; bool _AP_S1 = true; int _AP_W = 72; bool _AP_S = true]'
+C:/Xilinx/Vivado/2019.1/include/ap_int_base.h:215:13:   required from 'ap_int_base<_AP_W, _AP_S>::ap_int_base(const ap_int_base<_AP_W2, _AP_S2>&) [with int _AP_W2 = 71; bool _AP_S2 = true; int _AP_W = 72; bool _AP_S = true]'
+C:/Xilinx/Vivado/2019.1/include/ap_int_base.h:1353:1:   required from 'typename ap_int_base<_AP_W, _AP_S>::RType<_AP_W2, _AP_S2>::plus operator+(const ap_int_base<_AP_W2, _AP_S2>&, const ap_int_base<_AP_W3, _AP_S3>&) [with int _AP_W = 71; bool _AP_S = true; int _AP_W2 = 10; bool _AP_S2 = false; typename ap_int_base<_AP_W, _AP_S>::RType<_AP_W2, _AP_S2>::plus = ap_int<72>]'
+SkyNet.cpp:52:68:   required from here
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:5291:45: warning: enum constant in boolean context [-Wint-in-bool-context]
+       static const uint64_t mask = wordBits ? (~0ULL << (wordBits)) : 0ULL;
+                                    ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:5299:43: warning: enum constant in boolean context [-Wint-in-bool-context]
+     static const uint64_t mask = wordBits ? (~0ULL << (wordBits)) : 0ULL;
+                                  ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h: In instantiation of 'void ap_private<_AP_W, _AP_S, false>::cpSext(const ap_private<_AP_W1, _AP_S1>&) [with int _AP_W1 = 10; bool _AP_S1 = false; int _AP_W = 72; bool _AP_S = true]':
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:5334:7:   required from 'void ap_private<_AP_W, _AP_S, false>::cpSextOrTrunc(const ap_private<_AP_W1, _AP_S1>&) [with int _AP_W1 = 10; bool _AP_S1 = false; int _AP_W = 72; bool _AP_S = true]'
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:4597:7:   required from 'ap_private<_AP_W, _AP_S, false>& ap_private<_AP_W, _AP_S, false>::operator=(const ap_private<_AP_W1, _AP_S1>&) [with int _AP_W1 = 10; bool _AP_S1 = false; int _AP_W = 72; bool _AP_S = true]'
+C:/Xilinx/Vivado/2019.1/include/ap_int_base.h:215:13:   required from 'ap_int_base<_AP_W, _AP_S>::ap_int_base(const ap_int_base<_AP_W2, _AP_S2>&) [with int _AP_W2 = 10; bool _AP_S2 = false; int _AP_W = 72; bool _AP_S = true]'
+C:/Xilinx/Vivado/2019.1/include/ap_int_base.h:1353:1:   required from 'typename ap_int_base<_AP_W, _AP_S>::RType<_AP_W2, _AP_S2>::plus operator+(const ap_int_base<_AP_W2, _AP_S2>&, const ap_int_base<_AP_W3, _AP_S3>&) [with int _AP_W = 71; bool _AP_S = true; int _AP_W2 = 10; bool _AP_S2 = false; typename ap_int_base<_AP_W, _AP_S>::RType<_AP_W2, _AP_S2>::plus = ap_int<72>]'
+SkyNet.cpp:52:68:   required from here
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:5291:45: warning: enum constant in boolean context [-Wint-in-bool-context]
+       static const uint64_t mask = wordBits ? (~0ULL << (wordBits)) : 0ULL;
+                                    ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:5299:43: warning: enum constant in boolean context [-Wint-in-bool-context]
+     static const uint64_t mask = wordBits ? (~0ULL << (wordBits)) : 0ULL;
+                                  ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                 from C:/Xilinx/Vivado/2019.1/include/ap_int.h:54,
+                 from C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.h:14,
+                 from SkyNet.cpp:1:
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h: In instantiation of 'void ap_private<_AP_W, _AP_S, true>::clearUnusedBits() volatile [with int _AP_W = 33; bool _AP_S = false]':
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:1662:5:   required from 'ap_private<_AP_W, _AP_S, true>::ap_private(const ap_private<_AP_W1, _AP_S1, _AP_OPT>&) [with int _AP_W1 = 7; bool _AP_S1 = false; bool _AP_OPT = true; int _AP_W = 33; bool _AP_S = false]'
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:2650:34:   required from 'bool ap_private<_AP_W, _AP_S, true>::operator<(const ap_private<_AP_W1, _AP_S1>&) const [with int _AP_W2 = 32; bool _AP_S2 = true; int _AP_W = 7; bool _AP_S = false]'
+C:/Xilinx/Vivado/2019.1/include/ap_int_base.h:887:20:   required from 'bool ap_int_base<_AP_W, _AP_S>::operator<(const ap_int_base<_AP_W2, _AP_S2>&) const [with int _AP_W2 = 32; bool _AP_S2 = true; int _AP_W = 7; bool _AP_S = false]'
+C:/Xilinx/Vivado/2019.1/include/ap_int_base.h:1598:1:   required from 'bool operator<(const ap_int_base<_AP_W2, _AP_S2>&, int) [with int _AP_W = 7; bool _AP_S = false]'
+SkyNet.cpp:54:44:   required from here
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:2144:28: warning: enum constant in boolean context [-Wint-in-bool-context]
+             : (excess_bits ? (((uint64_t)VAL) << (excess_bits)) >> (excess_bits)
+               ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                            : (uint64_t)VAL));
+                            ~~~~~~~~~~~~~~~~
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h: In instantiation of 'void ap_private<_AP_W, _AP_S, true>::clearUnusedBits() volatile [with int _AP_W = 33; bool _AP_S = true]':
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:1662:5:   required from 'ap_private<_AP_W, _AP_S, true>::ap_private(const ap_private<_AP_W1, _AP_S1, _AP_OPT>&) [with int _AP_W1 = 32; bool _AP_S1 = true; bool _AP_OPT = true; int _AP_W = 33; bool _AP_S = true]'
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:2651:35:   required from 'bool ap_private<_AP_W, _AP_S, true>::operator<(const ap_private<_AP_W1, _AP_S1>&) const [with int _AP_W2 = 32; bool _AP_S2 = true; int _AP_W = 7; bool _AP_S = false]'
+C:/Xilinx/Vivado/2019.1/include/ap_int_base.h:887:20:   required from 'bool ap_int_base<_AP_W, _AP_S>::operator<(const ap_int_base<_AP_W2, _AP_S2>&) const [with int _AP_W2 = 32; bool _AP_S2 = true; int _AP_W = 7; bool _AP_S = false]'
+C:/Xilinx/Vivado/2019.1/include/ap_int_base.h:1598:1:   required from 'bool operator<(const ap_int_base<_AP_W2, _AP_S2>&, int) [with int _AP_W = 7; bool _AP_S = false]'
+SkyNet.cpp:54:44:   required from here
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:2144:28: warning: enum constant in boolean context [-Wint-in-bool-context]
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h: In instantiation of 'void ap_private<_AP_W, _AP_S, true>::clearUnusedBits() volatile [with int _AP_W = 8; bool _AP_S = false]':
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:1644:3:   required from 'ap_private<_AP_W, _AP_S, true>::ap_private(unsigned char) [with int _AP_W = 8; bool _AP_S = false]'
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:4661:3:   required from 'ap_private<_AP_W, _AP_S, false>& ap_private<_AP_W, _AP_S, false>::operator=(unsigned char) [with int _AP_W = 256; bool _AP_S = false]'
+C:/Xilinx/Vivado/2019.1/include/ap_int_base.h:240:3:   required from 'ap_int_base<_AP_W, _AP_S>::ap_int_base(unsigned char) [with int _AP_W = 256; bool _AP_S = false]'
+C:/Xilinx/Vivado/2019.1/include/ap_int_ref.h:388:3:   required from 'ap_range_ref<_AP_W, _AP_S>& ap_range_ref<_AP_W, _AP_S>::operator=(unsigned char) [with int _AP_W = 256; bool _AP_S = true]'
+SkyNet.cpp:563:52:   required from here
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:2144:28: warning: enum constant in boolean context [-Wint-in-bool-context]
+                 from C:/Xilinx/Vivado/2019.1/include/ap_int.h:54,
+                 from C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.h:14,
+                 from SkyNet.cpp:1:
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h: In instantiation of 'void ap_private<_AP_W, _AP_S, false>::cpSext(const ap_private<_AP_W1, _AP_S1>&) [with int _AP_W1 = 38; bool _AP_S1 = true; int _AP_W = 70; bool _AP_S = true]':
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:5334:7:   required from 'void ap_private<_AP_W, _AP_S, false>::cpSextOrTrunc(const ap_private<_AP_W1, _AP_S1>&) [with int _AP_W1 = 38; bool _AP_S1 = true; int _AP_W = 70; bool _AP_S = true]'
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:4597:7:   required from 'ap_private<_AP_W, _AP_S, false>& ap_private<_AP_W, _AP_S, false>::operator=(const ap_private<_AP_W1, _AP_S1>&) [with int _AP_W1 = 38; bool _AP_S1 = true; int _AP_W = 70; bool _AP_S = true]'
+C:/Xilinx/Vivado/2019.1/include/ap_int_base.h:215:13:   required from 'ap_int_base<_AP_W, _AP_S>::ap_int_base(const ap_int_base<_AP_W2, _AP_S2>&) [with int _AP_W2 = 38; bool _AP_S2 = true; int _AP_W = 70; bool _AP_S = true]'
+C:/Xilinx/Vivado/2019.1/include/ap_int_base.h:1352:1:   required from 'typename ap_int_base<_AP_W, _AP_S>::RType<_AP_W2, _AP_S2>::mult operator*(const ap_int_base<_AP_W2, _AP_S2>&, const ap_int_base<_AP_W3, _AP_S3>&) [with int _AP_W = 38; bool _AP_S = true; int _AP_W2 = 32; bool _AP_S2 = true; typename ap_int_base<_AP_W, _AP_S>::RType<_AP_W2, _AP_S2>::mult = ap_int<70>]'
+C:/Xilinx/Vivado/2019.1/include/ap_int_base.h:1467:1:   required from 'typename ap_int_base<_AP_W, _AP_S>::RType<_AP_SIZE_int, true>::mult operator*(const ap_int_base<_AP_W2, _AP_S2>&, int) [with int _AP_W = 38; bool _AP_S = true; typename ap_int_base<_AP_W, _AP_S>::RType<_AP_SIZE_int, true>::mult = ap_int<70>]'
+SkyNet.cpp:52:51:   required from here
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:5291:45: warning: enum constant in boolean context [-Wint-in-bool-context]
+       static const uint64_t mask = wordBits ? (~0ULL << (wordBits)) : 0ULL;
+                                    ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:5299:43: warning: enum constant in boolean context [-Wint-in-bool-context]
+     static const uint64_t mask = wordBits ? (~0ULL << (wordBits)) : 0ULL;
+                                  ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h: In instantiation of 'void ap_private<_AP_W, _AP_S, false>::cpSext(const ap_private<_AP_W1, _AP_S1>&) [with int _AP_W1 = 32; bool _AP_S1 = true; int _AP_W = 70; bool _AP_S = true]':
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:5334:7:   required from 'void ap_private<_AP_W, _AP_S, false>::cpSextOrTrunc(const ap_private<_AP_W1, _AP_S1>&) [with int _AP_W1 = 32; bool _AP_S1 = true; int _AP_W = 70; bool _AP_S = true]'
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:4597:7:   required from 'ap_private<_AP_W, _AP_S, false>& ap_private<_AP_W, _AP_S, false>::operator=(const ap_private<_AP_W1, _AP_S1>&) [with int _AP_W1 = 32; bool _AP_S1 = true; int _AP_W = 70; bool _AP_S = true]'
+C:/Xilinx/Vivado/2019.1/include/ap_int_base.h:215:13:   required from 'ap_int_base<_AP_W, _AP_S>::ap_int_base(const ap_int_base<_AP_W2, _AP_S2>&) [with int _AP_W2 = 32; bool _AP_S2 = true; int _AP_W = 70; bool _AP_S = true]'
+C:/Xilinx/Vivado/2019.1/include/ap_int_base.h:1352:1:   required from 'typename ap_int_base<_AP_W, _AP_S>::RType<_AP_W2, _AP_S2>::mult operator*(const ap_int_base<_AP_W2, _AP_S2>&, const ap_int_base<_AP_W3, _AP_S3>&) [with int _AP_W = 38; bool _AP_S = true; int _AP_W2 = 32; bool _AP_S2 = true; typename ap_int_base<_AP_W, _AP_S>::RType<_AP_W2, _AP_S2>::mult = ap_int<70>]'
+C:/Xilinx/Vivado/2019.1/include/ap_int_base.h:1467:1:   required from 'typename ap_int_base<_AP_W, _AP_S>::RType<_AP_SIZE_int, true>::mult operator*(const ap_int_base<_AP_W2, _AP_S2>&, int) [with int _AP_W = 38; bool _AP_S = true; typename ap_int_base<_AP_W, _AP_S>::RType<_AP_SIZE_int, true>::mult = ap_int<70>]'
+SkyNet.cpp:52:51:   required from here
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:5291:45: warning: enum constant in boolean context [-Wint-in-bool-context]
+       static const uint64_t mask = wordBits ? (~0ULL << (wordBits)) : 0ULL;
+                                    ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:5299:43: warning: enum constant in boolean context [-Wint-in-bool-context]
+     static const uint64_t mask = wordBits ? (~0ULL << (wordBits)) : 0ULL;
+                                  ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h: In instantiation of 'void ap_private<_AP_W, _AP_S, false>::cpSext(const ap_private<_AP_W1, _AP_S1>&) [with int _AP_W1 = 72; bool _AP_S1 = true; int _AP_W = 73; bool _AP_S = true]':
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:5334:7:   required from 'void ap_private<_AP_W, _AP_S, false>::cpSextOrTrunc(const ap_private<_AP_W1, _AP_S1>&) [with int _AP_W1 = 72; bool _AP_S1 = true; int _AP_W = 73; bool _AP_S = true]'
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:4597:7:   required from 'ap_private<_AP_W, _AP_S, false>& ap_private<_AP_W, _AP_S, false>::operator=(const ap_private<_AP_W1, _AP_S1>&) [with int _AP_W1 = 72; bool _AP_S1 = true; int _AP_W = 73; bool _AP_S = true]'
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:3286:5:   required from 'ap_private<_AP_W, _AP_S, false>::ap_private(const ap_private<_AP_W1, _AP_S1, false>&) [with int _AP_W1 = 72; bool _AP_S1 = true; int _AP_W = 73; bool _AP_S = true]'
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:3885:50:   required from 'typename ap_private<_AP_W, _AP_S, false>::RType<_AP_W2, _AP_S2>::plus ap_private<_AP_W, _AP_S, false>::operator+(const ap_private<_AP_W1, _AP_S1>&) const [with int _AP_W1 = 72; bool _AP_S1 = true; int _AP_W = 72; bool _AP_S = true; typename ap_private<_AP_W, _AP_S, false>::RType<_AP_W2, _AP_S2>::plus = ap_private<73, true, false>]'
+C:/Xilinx/Vivado/2019.1/include/ap_int_base.h:1353:1:   required from 'typename ap_int_base<_AP_W, _AP_S>::RType<_AP_W2, _AP_S2>::plus operator+(const ap_int_base<_AP_W2, _AP_S2>&, const ap_int_base<_AP_W3, _AP_S3>&) [with int _AP_W = 71; bool _AP_S = true; int _AP_W2 = 10; bool _AP_S2 = false; typename ap_int_base<_AP_W, _AP_S>::RType<_AP_W2, _AP_S2>::plus = ap_int<72>]'
+SkyNet.cpp:52:68:   required from here
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:5291:45: warning: enum constant in boolean context [-Wint-in-bool-context]
+       static const uint64_t mask = wordBits ? (~0ULL << (wordBits)) : 0ULL;
+                                    ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:5299:43: warning: enum constant in boolean context [-Wint-in-bool-context]
+     static const uint64_t mask = wordBits ? (~0ULL << (wordBits)) : 0ULL;
+                                  ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h: In instantiation of 'void ap_private<_AP_W, _AP_S, false>::cpSext(const ap_private<_AP_W1, _AP_S1>&) [with int _AP_W1 = 8; bool _AP_S1 = false; int _AP_W = 256; bool _AP_S = false]':
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:5334:7:   required from 'void ap_private<_AP_W, _AP_S, false>::cpSextOrTrunc(const ap_private<_AP_W1, _AP_S1>&) [with int _AP_W1 = 8; bool _AP_S1 = false; int _AP_W = 256; bool _AP_S = false]'
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:4597:7:   required from 'ap_private<_AP_W, _AP_S, false>& ap_private<_AP_W, _AP_S, false>::operator=(const ap_private<_AP_W1, _AP_S1>&) [with int _AP_W1 = 8; bool _AP_S1 = false; int _AP_W = 256; bool _AP_S = false]'
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:4661:3:   required from 'ap_private<_AP_W, _AP_S, false>& ap_private<_AP_W, _AP_S, false>::operator=(unsigned char) [with int _AP_W = 256; bool _AP_S = false]'
+C:/Xilinx/Vivado/2019.1/include/ap_int_base.h:240:3:   required from 'ap_int_base<_AP_W, _AP_S>::ap_int_base(unsigned char) [with int _AP_W = 256; bool _AP_S = false]'
+C:/Xilinx/Vivado/2019.1/include/ap_int_ref.h:388:3:   required from 'ap_range_ref<_AP_W, _AP_S>& ap_range_ref<_AP_W, _AP_S>::operator=(unsigned char) [with int _AP_W = 256; bool _AP_S = true]'
+SkyNet.cpp:563:52:   required from here
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:5291:45: warning: enum constant in boolean context [-Wint-in-bool-context]
+       static const uint64_t mask = wordBits ? (~0ULL << (wordBits)) : 0ULL;
+                                    ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:5299:43: warning: enum constant in boolean context [-Wint-in-bool-context]
+     static const uint64_t mask = wordBits ? (~0ULL << (wordBits)) : 0ULL;
+                                  ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h: In instantiation of 'void ap_private<_AP_W, _AP_S, false>::cpSext(const ap_private<_AP_W1, _AP_S1>&) [with int _AP_W1 = 32; bool _AP_S1 = true; int _AP_W = 256; bool _AP_S = false]':
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:5334:7:   required from 'void ap_private<_AP_W, _AP_S, false>::cpSextOrTrunc(const ap_private<_AP_W1, _AP_S1>&) [with int _AP_W1 = 32; bool _AP_S1 = true; int _AP_W = 256; bool _AP_S = false]'
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:4597:7:   required from 'ap_private<_AP_W, _AP_S, false>& ap_private<_AP_W, _AP_S, false>::operator=(const ap_private<_AP_W1, _AP_S1>&) [with int _AP_W1 = 32; bool _AP_S1 = true; int _AP_W = 256; bool _AP_S = false]'
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:4664:3:   required from 'ap_private<_AP_W, _AP_S, false>& ap_private<_AP_W, _AP_S, false>::operator=(int) [with int _AP_W = 256; bool _AP_S = false]'
+C:/Xilinx/Vivado/2019.1/include/ap_int_base.h:243:3:   required from 'ap_int_base<_AP_W, _AP_S>::ap_int_base(int) [with int _AP_W = 256; bool _AP_S = false]'
+C:/Xilinx/Vivado/2019.1/include/ap_int_ref.h:391:3:   required from 'ap_range_ref<_AP_W, _AP_S>& ap_range_ref<_AP_W, _AP_S>::operator=(int) [with int _AP_W = 256; bool _AP_S = true]'
+SkyNet.cpp:737:38:   required from here
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:5291:45: warning: enum constant in boolean context [-Wint-in-bool-context]
+       static const uint64_t mask = wordBits ? (~0ULL << (wordBits)) : 0ULL;
+                                    ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:5299:43: warning: enum constant in boolean context [-Wint-in-bool-context]
+     static const uint64_t mask = wordBits ? (~0ULL << (wordBits)) : 0ULL;
+                                  ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h: In instantiation of 'void ap_private<_AP_W, _AP_S, false>::cpSext(const ap_private<_AP_W1, _AP_S1>&) [with int _AP_W1 = 70; bool _AP_S1 = true; int _AP_W = 140; bool _AP_S = true]':
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:5334:7:   required from 'void ap_private<_AP_W, _AP_S, false>::cpSextOrTrunc(const ap_private<_AP_W1, _AP_S1>&) [with int _AP_W1 = 70; bool _AP_S1 = true; int _AP_W = 140; bool _AP_S = true]'
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:4597:7:   required from 'ap_private<_AP_W, _AP_S, false>& ap_private<_AP_W, _AP_S, false>::operator=(const ap_private<_AP_W1, _AP_S1>&) [with int _AP_W1 = 70; bool _AP_S1 = true; int _AP_W = 140; bool _AP_S = true]'
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:3286:5:   required from 'ap_private<_AP_W, _AP_S, false>::ap_private(const ap_private<_AP_W1, _AP_S1, false>&) [with int _AP_W1 = 70; bool _AP_S1 = true; int _AP_W = 140; bool _AP_S = true]'
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:3907:42:   required from 'typename ap_private<_AP_W, _AP_S, false>::RType<_AP_W2, _AP_S2>::mult ap_private<_AP_W, _AP_S, false>::operator*(const ap_private<_AP_W1, _AP_S1>&) const [with int _AP_W1 = 70; bool _AP_S1 = true; int _AP_W = 70; bool _AP_S = true; typename ap_private<_AP_W, _AP_S, false>::RType<_AP_W2, _AP_S2>::mult = ap_private<140, true, false>]'
+C:/Xilinx/Vivado/2019.1/include/ap_int_base.h:1352:1:   required from 'typename ap_int_base<_AP_W, _AP_S>::RType<_AP_W2, _AP_S2>::mult operator*(const ap_int_base<_AP_W2, _AP_S2>&, const ap_int_base<_AP_W3, _AP_S3>&) [with int _AP_W = 38; bool _AP_S = true; int _AP_W2 = 32; bool _AP_S2 = true; typename ap_int_base<_AP_W, _AP_S>::RType<_AP_W2, _AP_S2>::mult = ap_int<70>]'
+C:/Xilinx/Vivado/2019.1/include/ap_int_base.h:1467:1:   required from 'typename ap_int_base<_AP_W, _AP_S>::RType<_AP_SIZE_int, true>::mult operator*(const ap_int_base<_AP_W2, _AP_S2>&, int) [with int _AP_W = 38; bool _AP_S = true; typename ap_int_base<_AP_W, _AP_S>::RType<_AP_SIZE_int, true>::mult = ap_int<70>]'
+SkyNet.cpp:52:51:   required from here
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:5291:45: warning: enum constant in boolean context [-Wint-in-bool-context]
+       static const uint64_t mask = wordBits ? (~0ULL << (wordBits)) : 0ULL;
+                                    ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:5299:43: warning: enum constant in boolean context [-Wint-in-bool-context]
+     static const uint64_t mask = wordBits ? (~0ULL << (wordBits)) : 0ULL;
+                                  ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                 from C:/Xilinx/Vivado/2019.1/include/ap_int.h:54,
+                 from C:/Users/zhangqx/workspace/SDSoC/skynet/src/SkyNet.h:14,
+                 from SkyNet.cpp:1:
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h: In function 'void POOL(ADT32*, ADT (*)[43][83], int, int, int, int, int)':
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:3425:33: warning: 'DATA.ap_private<256, true, false>::pVal[3]' is used uninitialized in this function [-Wuninitialized]
+         _AP_S ? ((((int64_t)pVal[_AP_N - 1]) << (excess_bits)) >> excess_bits)
+                             ~~~~^
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:3428:28: warning: 'tmp.ap_private<256, false, false>::pVal[3]' is used uninitialized in this function [-Wuninitialized]
+                      : pVal[_AP_N - 1]);
+                        ~~~~^
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h: In function 'void Export_CONV1(ADT32*, ADT (*)[43][83], int)':
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:3425:33: warning: 'DATA.ap_private<256, true, false>::pVal[3]' is used uninitialized in this function [-Wuninitialized]
+         _AP_S ? ((((int64_t)pVal[_AP_N - 1]) << (excess_bits)) >> excess_bits)
+                             ~~~~^
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:3428:28: warning: 'tmp.ap_private<256, false, false>::pVal[3]' is used uninitialized in this function [-Wuninitialized]
+                      : pVal[_AP_N - 1]);
+                        ~~~~^
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h: In function 'void Export_CONV1(ADT32*, ADT (*)[43][83], int)':
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:3425:33: warning: 'DATA.ap_private<256, true, false>::pVal[3]' is used uninitialized in this function [-Wuninitialized]
+         _AP_S ? ((((int64_t)pVal[_AP_N - 1]) << (excess_bits)) >> excess_bits)
+                             ~~~~^
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:3428:28: warning: 'tmp.ap_private<256, false, false>::pVal[3]' is used uninitialized in this function [-Wuninitialized]
+                      : pVal[_AP_N - 1]);
+                        ~~~~^
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h: In function 'void Export_CONV(ADT32*, ADT (*)[43][83], int, int, int, int, int)':
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:3425:33: warning: 'DATA.ap_private<256, true, false>::pVal[3]' is used uninitialized in this function [-Wuninitialized]
+         _AP_S ? ((((int64_t)pVal[_AP_N - 1]) << (excess_bits)) >> excess_bits)
+                             ~~~~^
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:3428:28: warning: 'tmp.ap_private<256, false, false>::pVal[3]' is used uninitialized in this function [-Wuninitialized]
+                      : pVal[_AP_N - 1]);
+                        ~~~~^
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h: In function 'void Export_CONV(ADT32*, ADT (*)[43][83], int, int, int, int, int)':
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:3425:33: warning: 'DATA.ap_private<256, true, false>::pVal[3]' is used uninitialized in this function [-Wuninitialized]
+         _AP_S ? ((((int64_t)pVal[_AP_N - 1]) << (excess_bits)) >> excess_bits)
+                             ~~~~^
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:3428:28: warning: 'tmp.ap_private<256, false, false>::pVal[3]' is used uninitialized in this function [-Wuninitialized]
+                      : pVal[_AP_N - 1]);
+                        ~~~~^
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h: In function 'void Export_CONV(ADT32*, ADT (*)[43][83], int, int, int, int, int)':
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:3425:33: warning: 'DATA.ap_private<256, true, false>::pVal[3]' is used uninitialized in this function [-Wuninitialized]
+         _AP_S ? ((((int64_t)pVal[_AP_N - 1]) << (excess_bits)) >> excess_bits)
+                             ~~~~^
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:3428:28: warning: 'tmp.ap_private<256, false, false>::pVal[3]' is used uninitialized in this function [-Wuninitialized]
+                      : pVal[_AP_N - 1]);
+                        ~~~~^
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h: In function 'void Export_CONV(ADT32*, ADT (*)[43][83], int, int, int, int, int)':
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:3425:33: warning: 'DATA.ap_private<256, true, false>::pVal[3]' is used uninitialized in this function [-Wuninitialized]
+         _AP_S ? ((((int64_t)pVal[_AP_N - 1]) << (excess_bits)) >> excess_bits)
+                             ~~~~^
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:3428:28: warning: 'tmp.ap_private<256, false, false>::pVal[3]' is used uninitialized in this function [-Wuninitialized]
+                      : pVal[_AP_N - 1]);
+                        ~~~~^
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h: In function 'void POOL(ADT32*, ADT (*)[43][83], int, int, int, int, int)':
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:3425:33: warning: 'DATA.ap_private<256, true, false>::pVal[3]' is used uninitialized in this function [-Wuninitialized]
+         _AP_S ? ((((int64_t)pVal[_AP_N - 1]) << (excess_bits)) >> excess_bits)
+                             ~~~~^
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:3428:28: warning: 'tmp.ap_private<256, false, false>::pVal[3]' is used uninitialized in this function [-Wuninitialized]
+                      : pVal[_AP_N - 1]);
+                        ~~~~^
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h: In function 'void Compute_BBOX(SDT (*)[43][83], BDT*, BDT8*)':
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:3428:28: warning: 'tmp.ap_private<256, false, false>::pVal[3]' is used uninitialized in this function [-Wuninitialized]
+                      : pVal[_AP_N - 1]);
+                        ~~~~^
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:3428:28: warning: 'tmp.ap_private<256, false, false>::pVal[3]' is used uninitialized in this function [-Wuninitialized]
+                      : pVal[_AP_N - 1]);
+                        ~~~~^
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:3428:28: warning: 'tmp.ap_private<256, false, false>::pVal[3]' is used uninitialized in this function [-Wuninitialized]
+                      : pVal[_AP_N - 1]);
+                        ~~~~^
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:3428:28: warning: 'tmp.ap_private<256, false, false>::pVal[3]' is used uninitialized in this function [-Wuninitialized]
+                      : pVal[_AP_N - 1]);
+                        ~~~~^
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:3428:28: warning: 'tmp.ap_private<256, false, false>::pVal[3]' is used uninitialized in this function [-Wuninitialized]
+                      : pVal[_AP_N - 1]);
+                        ~~~~^
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:3428:28: warning: 'tmp.ap_private<256, false, false>::pVal[3]' is used uninitialized in this function [-Wuninitialized]
+                      : pVal[_AP_N - 1]);
+                        ~~~~^
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:3428:28: warning: 'tmp.ap_private<256, false, false>::pVal[3]' is used uninitialized in this function [-Wuninitialized]
+                      : pVal[_AP_N - 1]);
+                        ~~~~^
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h: In function 'void REORG(ADT32*, ADT (*)[43][83], ap_uint<6>, ap_uint<3>)':
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:2144:42: warning: 'ifm_index.ap_private<20, false, true>::VAL' is used uninitialized in this function [-Wuninitialized]
+             : (excess_bits ? (((uint64_t)VAL) << (excess_bits)) >> (excess_bits)
+                                          ^~~
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:2144:42: warning: 'h.ap_private<7, false, true>::VAL' is used uninitialized in this function [-Wuninitialized]
+             : (excess_bits ? (((uint64_t)VAL) << (excess_bits)) >> (excess_bits)
+                                          ^~~
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:2143:27: warning: '<anonymous>.ap_private<32, true>::VAL' is used uninitialized in this function [-Wuninitialized]
+             ? ((((int64_t)VAL) << (excess_bits)) >> (excess_bits))
+                           ^~~
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:2144:42: warning: 'w.ap_private<7, false, true>::VAL' may be used uninitialized in this function [-Wmaybe-uninitialized]
+             : (excess_bits ? (((uint64_t)VAL) << (excess_bits)) >> (excess_bits)
+                                          ^~~
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:2143:27: warning: '<anonymous>.ap_private<32, true>::VAL' may be used uninitialized in this function [-Wmaybe-uninitialized]
+             ? ((((int64_t)VAL) << (excess_bits)) >> (excess_bits))
+                           ^~~
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:2143:27: warning: '<anonymous>.ap_private<32, true>::VAL' may be used uninitialized in this function [-Wmaybe-uninitialized]
+             ? ((((int64_t)VAL) << (excess_bits)) >> (excess_bits))
+                           ^~~
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:2144:42: warning: '<anonymous>.ap_private<1, false>::VAL' may be used uninitialized in this function [-Wmaybe-uninitialized]
+             : (excess_bits ? (((uint64_t)VAL) << (excess_bits)) >> (excess_bits)
+                                          ^~~
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:2143:27: warning: '<anonymous>.ap_private<32, true>::VAL' may be used uninitialized in this function [-Wmaybe-uninitialized]
+             ? ((((int64_t)VAL) << (excess_bits)) >> (excess_bits))
+                           ^~~
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:2143:27: warning: '<anonymous>.ap_private<32, true>::VAL' may be used uninitialized in this function [-Wmaybe-uninitialized]
+             ? ((((int64_t)VAL) << (excess_bits)) >> (excess_bits))
+                           ^~~
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:2144:42: warning: 'bias_h.ap_private<2, false, true>::VAL' may be used uninitialized in this function [-Wmaybe-uninitialized]
+             : (excess_bits ? (((uint64_t)VAL) << (excess_bits)) >> (excess_bits)
+                                          ^~~
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:2143:27: warning: '<anonymous>.ap_private<32, true>::VAL' may be used uninitialized in this function [-Wmaybe-uninitialized]
+             ? ((((int64_t)VAL) << (excess_bits)) >> (excess_bits))
+                           ^~~
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:2144:42: warning: 'bias_w.ap_private<2, false, true>::VAL' may be used uninitialized in this function [-Wmaybe-uninitialized]
+             : (excess_bits ? (((uint64_t)VAL) << (excess_bits)) >> (excess_bits)
+                                          ^~~
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:2143:27: warning: '<anonymous>.ap_private<32, true>::VAL' may be used uninitialized in this function [-Wmaybe-uninitialized]
+             ? ((((int64_t)VAL) << (excess_bits)) >> (excess_bits))
+                           ^~~
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:2143:27: warning: 'lhs.ap_private<39, true, true>::VAL' may be used uninitialized in this function [-Wmaybe-uninitialized]
+             ? ((((int64_t)VAL) << (excess_bits)) >> (excess_bits))
+                           ^~~
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:2143:27: warning: 'rhs.ap_private<39, true, true>::VAL' may be used uninitialized in this function [-Wmaybe-uninitialized]
+             ? ((((int64_t)VAL) << (excess_bits)) >> (excess_bits))
+                           ^~~
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:2143:27: warning: 'ret.ap_private<39, true, true>::VAL' may be used uninitialized in this function [-Wmaybe-uninitialized]
+             ? ((((int64_t)VAL) << (excess_bits)) >> (excess_bits))
+                           ^~~
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:2143:27: warning: 'lhs.ap_private<40, true, true>::VAL' may be used uninitialized in this function [-Wmaybe-uninitialized]
+             ? ((((int64_t)VAL) << (excess_bits)) >> (excess_bits))
+                           ^~~
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:2143:27: warning: 'rhs.ap_private<40, true, true>::VAL' may be used uninitialized in this function [-Wmaybe-uninitialized]
+             ? ((((int64_t)VAL) << (excess_bits)) >> (excess_bits))
+                           ^~~
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:2143:27: warning: 'ret.ap_private<40, true, true>::VAL' may be used uninitialized in this function [-Wmaybe-uninitialized]
+             ? ((((int64_t)VAL) << (excess_bits)) >> (excess_bits))
+                           ^~~
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:2144:42: warning: 'h_.ap_private<10, false, true>::VAL' may be used uninitialized in this function [-Wmaybe-uninitialized]
+             : (excess_bits ? (((uint64_t)VAL) << (excess_bits)) >> (excess_bits)
+                                          ^~~
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:2143:27: warning: '<anonymous>.ap_private<32, true>::VAL' may be used uninitialized in this function [-Wmaybe-uninitialized]
+             ? ((((int64_t)VAL) << (excess_bits)) >> (excess_bits))
+                           ^~~
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:2143:27: warning: 'lhs.ap_private<39, true, true>::VAL' may be used uninitialized in this function [-Wmaybe-uninitialized]
+             ? ((((int64_t)VAL) << (excess_bits)) >> (excess_bits))
+                           ^~~
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:2143:27: warning: 'rhs.ap_private<39, true, true>::VAL' may be used uninitialized in this function [-Wmaybe-uninitialized]
+             ? ((((int64_t)VAL) << (excess_bits)) >> (excess_bits))
+                           ^~~
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:2143:27: warning: 'ret.ap_private<39, true, true>::VAL' may be used uninitialized in this function [-Wmaybe-uninitialized]
+             ? ((((int64_t)VAL) << (excess_bits)) >> (excess_bits))
+                           ^~~
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:2143:27: warning: 'lhs.ap_private<40, true, true>::VAL' may be used uninitialized in this function [-Wmaybe-uninitialized]
+             ? ((((int64_t)VAL) << (excess_bits)) >> (excess_bits))
+                           ^~~
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:2143:27: warning: 'rhs.ap_private<40, true, true>::VAL' may be used uninitialized in this function [-Wmaybe-uninitialized]
+             ? ((((int64_t)VAL) << (excess_bits)) >> (excess_bits))
+                           ^~~
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:2143:27: warning: 'ret.ap_private<40, true, true>::VAL' may be used uninitialized in this function [-Wmaybe-uninitialized]
+             ? ((((int64_t)VAL) << (excess_bits)) >> (excess_bits))
+                           ^~~
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:2144:42: warning: 'w_.ap_private<10, false, true>::VAL' may be used uninitialized in this function [-Wmaybe-uninitialized]
+             : (excess_bits ? (((uint64_t)VAL) << (excess_bits)) >> (excess_bits)
+                                          ^~~
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:2143:27: warning: '<anonymous>.ap_private<32, true>::VAL' may be used uninitialized in this function [-Wmaybe-uninitialized]
+             ? ((((int64_t)VAL) << (excess_bits)) >> (excess_bits))
+                           ^~~
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:2143:27: warning: 'lhs.ap_private<38, true, true>::VAL' may be used uninitialized in this function [-Wmaybe-uninitialized]
+             ? ((((int64_t)VAL) << (excess_bits)) >> (excess_bits))
+                           ^~~
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:2143:27: warning: 'rhs.ap_private<38, true, true>::VAL' may be used uninitialized in this function [-Wmaybe-uninitialized]
+             ? ((((int64_t)VAL) << (excess_bits)) >> (excess_bits))
+                           ^~~
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:2143:27: warning: 'ret.ap_private<38, true, true>::VAL' may be used uninitialized in this function [-Wmaybe-uninitialized]
+             ? ((((int64_t)VAL) << (excess_bits)) >> (excess_bits))
+                           ^~~
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:2143:27: warning: '<anonymous>.ap_private<32, true>::VAL' may be used uninitialized in this function [-Wmaybe-uninitialized]
+             ? ((((int64_t)VAL) << (excess_bits)) >> (excess_bits))
+                           ^~~
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:3425:33: warning: 'lhs.ap_private<70, true, false>::pVal[1]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+         _AP_S ? ((((int64_t)pVal[_AP_N - 1]) << (excess_bits)) >> excess_bits)
+                             ~~~~^
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:3425:33: warning: 'rhs.ap_private<70, true, false>::pVal[1]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+         _AP_S ? ((((int64_t)pVal[_AP_N - 1]) << (excess_bits)) >> excess_bits)
+                             ~~~~^
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:3425:33: warning: 'ret.ap_private<70, true, false>::pVal[1]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+         _AP_S ? ((((int64_t)pVal[_AP_N - 1]) << (excess_bits)) >> excess_bits)
+                             ~~~~^
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:2143:27: warning: '<anonymous>.ap_private<32, true>::VAL' may be used uninitialized in this function [-Wmaybe-uninitialized]
+             ? ((((int64_t)VAL) << (excess_bits)) >> (excess_bits))
+                           ^~~
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:2143:27: warning: 'lhs.ap_private<42, true, true>::VAL' may be used uninitialized in this function [-Wmaybe-uninitialized]
+             ? ((((int64_t)VAL) << (excess_bits)) >> (excess_bits))
+                           ^~~
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:2143:27: warning: 'rhs.ap_private<42, true, true>::VAL' may be used uninitialized in this function [-Wmaybe-uninitialized]
+             ? ((((int64_t)VAL) << (excess_bits)) >> (excess_bits))
+                           ^~~
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:2143:27: warning: 'ret.ap_private<42, true, true>::VAL' may be used uninitialized in this function [-Wmaybe-uninitialized]
+             ? ((((int64_t)VAL) << (excess_bits)) >> (excess_bits))
+                           ^~~
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:3425:33: warning: 'lhs.ap_private<71, true, false>::pVal[1]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+         _AP_S ? ((((int64_t)pVal[_AP_N - 1]) << (excess_bits)) >> excess_bits)
+                             ~~~~^
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:3425:33: warning: 'rhs.ap_private<71, true, false>::pVal[1]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+         _AP_S ? ((((int64_t)pVal[_AP_N - 1]) << (excess_bits)) >> excess_bits)
+                             ~~~~^
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:3425:33: warning: 'ret.ap_private<71, true, false>::pVal[1]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+         _AP_S ? ((((int64_t)pVal[_AP_N - 1]) << (excess_bits)) >> excess_bits)
+                             ~~~~^
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:3425:33: warning: 'lhs.ap_private<72, true, false>::pVal[1]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+         _AP_S ? ((((int64_t)pVal[_AP_N - 1]) << (excess_bits)) >> excess_bits)
+                             ~~~~^
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:3425:33: warning: 'rhs.ap_private<72, true, false>::pVal[1]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+         _AP_S ? ((((int64_t)pVal[_AP_N - 1]) << (excess_bits)) >> excess_bits)
+                             ~~~~^
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:3425:33: warning: 'ret.ap_private<72, true, false>::pVal[1]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+         _AP_S ? ((((int64_t)pVal[_AP_N - 1]) << (excess_bits)) >> excess_bits)
+                             ~~~~^
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:2144:42: warning: 'ifm_index.ap_private<20, false, true>::VAL' may be used uninitialized in this function [-Wmaybe-uninitialized]
+             : (excess_bits ? (((uint64_t)VAL) << (excess_bits)) >> (excess_bits)
+                                          ^~~
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:2144:42: warning: 'c.ap_private<7, false, true>::VAL' may be used uninitialized in this function [-Wmaybe-uninitialized]
+             : (excess_bits ? (((uint64_t)VAL) << (excess_bits)) >> (excess_bits)
+                                          ^~~
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:2143:27: warning: '<anonymous>.ap_private<32, true>::VAL' may be used uninitialized in this function [-Wmaybe-uninitialized]
+             ? ((((int64_t)VAL) << (excess_bits)) >> (excess_bits))
+                           ^~~
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:2143:27: warning: '<anonymous>.ap_private<32, true>::VAL' may be used uninitialized in this function [-Wmaybe-uninitialized]
+             ? ((((int64_t)VAL) << (excess_bits)) >> (excess_bits))
+                           ^~~
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:2143:27: warning: 'lhs.ap_private<39, true, true>::VAL' may be used uninitialized in this function [-Wmaybe-uninitialized]
+             ? ((((int64_t)VAL) << (excess_bits)) >> (excess_bits))
+                           ^~~
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:2143:27: warning: 'rhs.ap_private<39, true, true>::VAL' may be used uninitialized in this function [-Wmaybe-uninitialized]
+             ? ((((int64_t)VAL) << (excess_bits)) >> (excess_bits))
+                           ^~~
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:2143:27: warning: 'ret.ap_private<39, true, true>::VAL' may be used uninitialized in this function [-Wmaybe-uninitialized]
+             ? ((((int64_t)VAL) << (excess_bits)) >> (excess_bits))
+                           ^~~
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:2143:27: warning: '<anonymous>.ap_private<32, true>::VAL' may be used uninitialized in this function [-Wmaybe-uninitialized]
+             ? ((((int64_t)VAL) << (excess_bits)) >> (excess_bits))
+                           ^~~
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:2143:27: warning: 'lhs.ap_private<40, true, true>::VAL' may be used uninitialized in this function [-Wmaybe-uninitialized]
+             ? ((((int64_t)VAL) << (excess_bits)) >> (excess_bits))
+                           ^~~
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:2143:27: warning: 'rhs.ap_private<40, true, true>::VAL' may be used uninitialized in this function [-Wmaybe-uninitialized]
+             ? ((((int64_t)VAL) << (excess_bits)) >> (excess_bits))
+                           ^~~
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:2143:27: warning: 'ret.ap_private<40, true, true>::VAL' may be used uninitialized in this function [-Wmaybe-uninitialized]
+             ? ((((int64_t)VAL) << (excess_bits)) >> (excess_bits))
+                           ^~~
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:2143:27: warning: '<anonymous>.ap_private<32, true>::VAL' may be used uninitialized in this function [-Wmaybe-uninitialized]
+             ? ((((int64_t)VAL) << (excess_bits)) >> (excess_bits))
+                           ^~~
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:2143:27: warning: 'lhs.ap_private<39, true, true>::VAL' may be used uninitialized in this function [-Wmaybe-uninitialized]
+             ? ((((int64_t)VAL) << (excess_bits)) >> (excess_bits))
+                           ^~~
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:2143:27: warning: 'rhs.ap_private<39, true, true>::VAL' may be used uninitialized in this function [-Wmaybe-uninitialized]
+             ? ((((int64_t)VAL) << (excess_bits)) >> (excess_bits))
+                           ^~~
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:2143:27: warning: 'ret.ap_private<39, true, true>::VAL' may be used uninitialized in this function [-Wmaybe-uninitialized]
+             ? ((((int64_t)VAL) << (excess_bits)) >> (excess_bits))
+                           ^~~
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:2144:42: warning: '<anonymous>.ap_private<1, false>::VAL' may be used uninitialized in this function [-Wmaybe-uninitialized]
+             : (excess_bits ? (((uint64_t)VAL) << (excess_bits)) >> (excess_bits)
+                                          ^~~
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:2144:42: warning: '<anonymous>.ap_private<1, false>::VAL' may be used uninitialized in this function [-Wmaybe-uninitialized]
+             : (excess_bits ? (((uint64_t)VAL) << (excess_bits)) >> (excess_bits)
+                                          ^~~
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h: In function 'void Load_WBUF3x3(WDT32*, WDT (*)[3][3], int)':
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:3425:33: warning: 'DATA.ap_private<256, true, false>::pVal[3]' is used uninitialized in this function [-Wuninitialized]
+         _AP_S ? ((((int64_t)pVal[_AP_N - 1]) << (excess_bits)) >> excess_bits)
+                             ~~~~^
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h: In function 'void Load_WBUF1x1(WDT32*, WDT (*)[32], int, int, int)':
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:3425:33: warning: 'DATA.ap_private<256, true, false>::pVal[3]' is used uninitialized in this function [-Wuninitialized]
+         _AP_S ? ((((int64_t)pVal[_AP_N - 1]) << (excess_bits)) >> excess_bits)
+                             ~~~~^
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h: In function 'void Load_FM(ADT32*, ADT (*)[43][83], int, int, int, int, int)':
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:3425:33: warning: 'DATA.ap_private<256, true, false>::pVal[3]' is used uninitialized in this function [-Wuninitialized]
+         _AP_S ? ((((int64_t)pVal[_AP_N - 1]) << (excess_bits)) >> excess_bits)
+                             ~~~~^
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h: In function 'void Load_FM1(ADT32*, ADT (*)[43][83], int)':
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:3425:33: warning: 'DATA.ap_private<256, true, false>::pVal[3]' is used uninitialized in this function [-Wuninitialized]
+         _AP_S ? ((((int64_t)pVal[_AP_N - 1]) << (excess_bits)) >> excess_bits)
+                             ~~~~^
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h: In function 'void Load_FM1(ADT32*, ADT (*)[43][83], int)':
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:3425:33: warning: 'DATA.ap_private<256, true, false>::pVal[3]' is used uninitialized in this function [-Wuninitialized]
+         _AP_S ? ((((int64_t)pVal[_AP_N - 1]) << (excess_bits)) >> excess_bits)
+                             ~~~~^
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h: In function 'void Load_FM1(ADT32*, ADT (*)[43][83], int)':
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:3425:33: warning: 'DATA.ap_private<256, true, false>::pVal[3]' is used uninitialized in this function [-Wuninitialized]
+         _AP_S ? ((((int64_t)pVal[_AP_N - 1]) << (excess_bits)) >> excess_bits)
+                             ~~~~^
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h: In function 'void Load_FM(ADT32*, ADT (*)[43][83], int, int, int, int, int)':
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:3425:33: warning: 'DATA.ap_private<256, true, false>::pVal[3]' is used uninitialized in this function [-Wuninitialized]
+         _AP_S ? ((((int64_t)pVal[_AP_N - 1]) << (excess_bits)) >> excess_bits)
+                             ~~~~^
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h: In function 'void Load_WBUF1x1(WDT32*, WDT (*)[32], int, int, int)':
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:3425:33: warning: 'DATA.ap_private<256, true, false>::pVal[3]' is used uninitialized in this function [-Wuninitialized]
+         _AP_S ? ((((int64_t)pVal[_AP_N - 1]) << (excess_bits)) >> excess_bits)
+                             ~~~~^
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h: In function 'void Load_WBUF1x1(WDT32*, WDT (*)[32], int, int, int)':
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:3425:33: warning: 'DATA.ap_private<256, true, false>::pVal[3]' is used uninitialized in this function [-Wuninitialized]
+         _AP_S ? ((((int64_t)pVal[_AP_N - 1]) << (excess_bits)) >> excess_bits)
+                             ~~~~^
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h: In function 'void Load_WBUF3x3(WDT32*, WDT (*)[3][3], int)':
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:3425:33: warning: 'DATA.ap_private<256, true, false>::pVal[3]' is used uninitialized in this function [-Wuninitialized]
+         _AP_S ? ((((int64_t)pVal[_AP_N - 1]) << (excess_bits)) >> excess_bits)
+                             ~~~~^
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h: In function 'void SkyNet(ADT4*, ADT32*, WDT32*, BDT8*)':
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:2144:42: warning: '<anonymous>.ap_private<6, false, true>::VAL' may be used uninitialized in this function [-Wmaybe-uninitialized]
+             : (excess_bits ? (((uint64_t)VAL) << (excess_bits)) >> (excess_bits)
+                                          ^~~
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:2144:42: warning: '<anonymous>.ap_private<3, false, true>::VAL' may be used uninitialized in this function [-Wmaybe-uninitialized]
+             : (excess_bits ? (((uint64_t)VAL) << (excess_bits)) >> (excess_bits)
+                                          ^~~
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:3425:33: warning: 'BBOX.ap_private<256, true, false>::pVal[3]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+         _AP_S ? ((((int64_t)pVal[_AP_N - 1]) << (excess_bits)) >> excess_bits)
+                             ~~~~^
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:3425:33: warning: '*((void*)(& BBOX)+32).ap_private<256, true, false>::pVal[3]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:3425:33: warning: '*((void*)(& BBOX)+64).ap_private<256, true, false>::pVal[3]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+C:/Xilinx/Vivado/2019.1/include/etc/ap_private.h:3425:33: warning: '*((void*)(& BBOX)+96).ap_private<256, true, false>::pVal[3]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+aarch64-linux-gnu-ar crs C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/swstubs/libskynet.a C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/swstubs/portinfo.o C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/swstubs/cf_stub.o C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/swstubs/SkyNet.o
+Preliminary link application ELF
+aarch64-linux-gnu-g++    C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/swstubs/SkyNet.o C:/Users/zhangqx/workspace/SDSoC/skynet/Release/src/transform.o C:/Users/zhangqx/workspace/SDSoC/skynet/Release/src/utils.o C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/swstubs/main.o      -LC:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/swstubs -Wl,--start-group  -Wl,--end-group -Wl,--start-group    -lpthread -LC:/Xilinx/SDx/2019.1/target/aarch64-linux/lib -lsds_lib -lxlnk_stub  -Wl,--end-group -o C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/swstubs/skynet.elf 
+aarch64-linux-gnu-objcopy -R .xdinfo -R .xddata -R .xdasm -R .xdfcnmap -R .xdhlscore -R .xdif -R .xdparams -R .xdcore -R .xdrepo -R .xdsdata -R .xdpp -R .xdrtlx C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/swstubs/skynet.elf
+Enable generation of hardware programming files
+Enable generation of boot files
+Calling VPL
+C:/Xilinx/SDx/2019.1/bin/vpl   --iprepo C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/iprepo/repo  --iprepo C:/Xilinx/SDx/2019.1/data/ip/xilinx  --platform C:/Xilinx/SDx/2019.1/platforms/zcu104/zcu104.xpfm  --temp_dir C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/p0  --output_dir C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/p0/vpl  --input_file C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/p0/.xsd/top.bd.tcl  --target hw   --save_temps  --kernels SkyNet:adapter --webtalk_flag SDSoC  --xp \"param:compiler.deleteDefaultReportConfigs=false\" 
+
+****** vpl v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+Attempting to get a license: ap_opencl
+WARNING: [VPL 17-301] Failed to get a license for 'ap_opencl'. Explanation: The license feature ap_opencl could not be found.
+Resolution: Check the status of your licenses in the Vivado License Manager. For debug help search Xilinx Support for "Licensing FAQ". 
+Attempting to get a license: ap_sdsoc
+Feature available: ap_sdsoc
+INFO: [VPL 60-895]   Target platform: C:/Xilinx/SDx/2019.1/platforms/zcu104/zcu104.xpfm
+INFO: [VPL 60-423]   Target device: zcu104
+INFO: [VPL 60-1032] Extracting DSA to C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/p0/vivado/vpl/.local/dsa
+[08:20:40] Run vpl: Step create_project: Started
+Creating Vivado project.
+[08:20:49] Run vpl: Step create_project: Completed
+[08:20:49] Run vpl: Step create_bd: Started
+[08:21:09] Run vpl: Step create_bd: Completed
+[08:21:09] Run vpl: Step update_bd: Started
+[08:21:09] Run vpl: Step update_bd: Completed
+[08:21:09] Run vpl: Step generate_target: Started
+[08:22:26] Run vpl: Step generate_target: RUNNING...
+[08:23:30] Run vpl: Step generate_target: Completed
+[08:23:30] Run vpl: Step config_hw_runs: Started
+[08:23:34] Run vpl: Step config_hw_runs: Completed
+[08:23:34] Run vpl: Step synth: Started
+[08:24:06] Block-level synthesis in progress, 0 of 13 jobs complete, 7 jobs running.
+[08:24:36] Block-level synthesis in progress, 0 of 13 jobs complete, 7 jobs running.
+[08:25:07] Block-level synthesis in progress, 1 of 13 jobs complete, 6 jobs running.
+[08:25:38] Block-level synthesis in progress, 5 of 13 jobs complete, 4 jobs running.
+[08:26:09] Block-level synthesis in progress, 5 of 13 jobs complete, 4 jobs running.
+[08:26:39] Block-level synthesis in progress, 5 of 13 jobs complete, 4 jobs running.
+[08:27:10] Block-level synthesis in progress, 6 of 13 jobs complete, 3 jobs running.
+[08:27:41] Block-level synthesis in progress, 9 of 13 jobs complete, 2 jobs running.
+[08:28:12] Block-level synthesis in progress, 12 of 13 jobs complete, 1 job running.
+[08:28:43] Block-level synthesis in progress, 12 of 13 jobs complete, 1 job running.
+[08:29:13] Block-level synthesis in progress, 12 of 13 jobs complete, 1 job running.
+[08:29:44] Block-level synthesis in progress, 12 of 13 jobs complete, 1 job running.
+[08:30:15] Block-level synthesis in progress, 12 of 13 jobs complete, 1 job running.
+[08:30:45] Block-level synthesis in progress, 12 of 13 jobs complete, 1 job running.
+[08:31:16] Block-level synthesis in progress, 12 of 13 jobs complete, 1 job running.
+[08:31:47] Block-level synthesis in progress, 12 of 13 jobs complete, 1 job running.
+[08:32:18] Block-level synthesis in progress, 12 of 13 jobs complete, 1 job running.
+[08:32:49] Block-level synthesis in progress, 12 of 13 jobs complete, 1 job running.
+[08:33:20] Block-level synthesis in progress, 12 of 13 jobs complete, 1 job running.
+[08:33:51] Block-level synthesis in progress, 12 of 13 jobs complete, 1 job running.
+[08:34:21] Block-level synthesis in progress, 12 of 13 jobs complete, 1 job running.
+[08:34:52] Block-level synthesis in progress, 12 of 13 jobs complete, 1 job running.
+[08:35:23] Block-level synthesis in progress, 12 of 13 jobs complete, 1 job running.
+[08:35:54] Block-level synthesis in progress, 12 of 13 jobs complete, 1 job running.
+[08:36:25] Block-level synthesis in progress, 12 of 13 jobs complete, 1 job running.
+[08:36:56] Block-level synthesis in progress, 12 of 13 jobs complete, 1 job running.
+[08:37:26] Block-level synthesis in progress, 12 of 13 jobs complete, 1 job running.
+[08:37:57] Block-level synthesis in progress, 12 of 13 jobs complete, 1 job running.
+[08:38:28] Block-level synthesis in progress, 12 of 13 jobs complete, 1 job running.
+[08:38:59] Block-level synthesis in progress, 12 of 13 jobs complete, 1 job running.
+[08:39:30] Block-level synthesis in progress, 12 of 13 jobs complete, 1 job running.
+[08:40:01] Block-level synthesis in progress, 12 of 13 jobs complete, 1 job running.
+[08:40:32] Block-level synthesis in progress, 12 of 13 jobs complete, 1 job running.
+[08:41:03] Block-level synthesis in progress, 12 of 13 jobs complete, 1 job running.
+[08:41:34] Block-level synthesis in progress, 12 of 13 jobs complete, 1 job running.
+[08:42:04] Block-level synthesis in progress, 12 of 13 jobs complete, 1 job running.
+[08:42:35] Block-level synthesis in progress, 12 of 13 jobs complete, 1 job running.
+[08:43:06] Block-level synthesis in progress, 12 of 13 jobs complete, 1 job running.
+[08:43:37] Block-level synthesis in progress, 12 of 13 jobs complete, 1 job running.
+[08:44:08] Block-level synthesis in progress, 12 of 13 jobs complete, 1 job running.
+[08:44:39] Block-level synthesis in progress, 12 of 13 jobs complete, 1 job running.
+[08:45:10] Block-level synthesis in progress, 12 of 13 jobs complete, 1 job running.
+[08:45:41] Block-level synthesis in progress, 12 of 13 jobs complete, 1 job running.
+[08:46:12] Block-level synthesis in progress, 12 of 13 jobs complete, 1 job running.
+[08:46:43] Block-level synthesis in progress, 12 of 13 jobs complete, 1 job running.
+[08:47:14] Block-level synthesis in progress, 12 of 13 jobs complete, 1 job running.
+[08:47:45] Block-level synthesis in progress, 12 of 13 jobs complete, 1 job running.
+[08:48:15] Block-level synthesis in progress, 12 of 13 jobs complete, 1 job running.
+[08:48:46] Block-level synthesis in progress, 12 of 13 jobs complete, 1 job running.
+[08:49:17] Block-level synthesis in progress, 12 of 13 jobs complete, 1 job running.
+[08:49:48] Block-level synthesis in progress, 12 of 13 jobs complete, 1 job running.
+[08:50:19] Block-level synthesis in progress, 12 of 13 jobs complete, 1 job running.
+[08:50:50] Block-level synthesis in progress, 12 of 13 jobs complete, 1 job running.
+[08:51:21] Block-level synthesis in progress, 12 of 13 jobs complete, 1 job running.
+[08:51:52] Block-level synthesis in progress, 12 of 13 jobs complete, 1 job running.
+[08:52:23] Block-level synthesis in progress, 12 of 13 jobs complete, 1 job running.
+[08:52:54] Block-level synthesis in progress, 12 of 13 jobs complete, 1 job running.
+[08:53:25] Block-level synthesis in progress, 12 of 13 jobs complete, 1 job running.
+[08:53:56] Block-level synthesis in progress, 12 of 13 jobs complete, 1 job running.
+[08:54:27] Block-level synthesis in progress, 12 of 13 jobs complete, 1 job running.
+[08:54:58] Block-level synthesis in progress, 12 of 13 jobs complete, 1 job running.
+[08:55:29] Block-level synthesis in progress, 12 of 13 jobs complete, 1 job running.
+[08:56:00] Block-level synthesis in progress, 12 of 13 jobs complete, 1 job running.
+[08:56:31] Block-level synthesis in progress, 12 of 13 jobs complete, 1 job running.
+[08:57:02] Block-level synthesis in progress, 12 of 13 jobs complete, 1 job running.
+[08:57:33] Block-level synthesis in progress, 12 of 13 jobs complete, 1 job running.
+[08:58:04] Block-level synthesis in progress, 12 of 13 jobs complete, 1 job running.
+[08:58:35] Block-level synthesis in progress, 12 of 13 jobs complete, 1 job running.
+[08:59:06] Block-level synthesis in progress, 12 of 13 jobs complete, 1 job running.
+[08:59:37] Block-level synthesis in progress, 12 of 13 jobs complete, 1 job running.
+[09:00:08] Block-level synthesis in progress, 12 of 13 jobs complete, 1 job running.
+[09:00:39] Block-level synthesis in progress, 12 of 13 jobs complete, 1 job running.
+[09:01:10] Block-level synthesis in progress, 12 of 13 jobs complete, 1 job running.
+[09:01:41] Block-level synthesis in progress, 12 of 13 jobs complete, 1 job running.
+[09:02:12] Block-level synthesis in progress, 12 of 13 jobs complete, 1 job running.
+[09:02:43] Block-level synthesis in progress, 12 of 13 jobs complete, 1 job running.
+[09:03:14] Block-level synthesis in progress, 12 of 13 jobs complete, 1 job running.
+[09:03:45] Block-level synthesis in progress, 12 of 13 jobs complete, 1 job running.
+[09:04:16] Block-level synthesis in progress, 12 of 13 jobs complete, 1 job running.
+[09:04:47] Block-level synthesis in progress, 12 of 13 jobs complete, 1 job running.
+[09:05:18] Block-level synthesis in progress, 12 of 13 jobs complete, 1 job running.
+[09:05:48] Block-level synthesis in progress, 12 of 13 jobs complete, 1 job running.
+[09:06:19] Block-level synthesis in progress, 12 of 13 jobs complete, 1 job running.
+[09:06:50] Block-level synthesis in progress, 12 of 13 jobs complete, 1 job running.
+[09:07:21] Block-level synthesis in progress, 12 of 13 jobs complete, 1 job running.
+[09:07:52] Block-level synthesis in progress, 12 of 13 jobs complete, 1 job running.
+[09:08:23] Block-level synthesis in progress, 12 of 13 jobs complete, 1 job running.
+[09:08:54] Block-level synthesis in progress, 12 of 13 jobs complete, 1 job running.
+[09:09:25] Block-level synthesis in progress, 12 of 13 jobs complete, 1 job running.
+[09:09:56] Block-level synthesis in progress, 13 of 13 jobs complete, 0 jobs running.
+[09:10:27] Top-level synthesis in progress.
+[09:10:58] Top-level synthesis in progress.
+[09:11:15] Run vpl: Step synth: Completed
+[09:11:15] Run vpl: Step impl: Started
+[09:15:21] Finished 2nd of 6 tasks (FPGA linking synthesized kernels to platform). Elapsed time: 00h 54m 54s 
+
+[09:15:21] Starting logic optimization..
+[09:16:23] Phase 1 Retarget
+[09:16:23] Phase 2 Constant propagation
+[09:16:23] Phase 3 Sweep
+[09:16:54] Phase 4 BUFG optimization
+[09:16:54] Phase 5 Shift Register Optimization
+[09:17:25] Phase 6 Post Processing Netlist
+[09:22:02] Finished 3rd of 6 tasks (FPGA logic optimization). Elapsed time: 00h 06m 40s 
+
+[09:22:02] Starting logic placement..
+[09:22:32] Phase 1 Placer Initialization
+[09:22:32] Phase 1.1 Placer Initialization Netlist Sorting
+[09:22:32] Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+[09:23:34] Phase 1.3 Build Placer Netlist Model
+[09:25:07] Phase 1.4 Constrain Clocks/Macros
+[09:25:07] Phase 2 Global Placement
+[09:25:07] Phase 2.1 Floorplanning
+[09:30:15] Phase 2.2 Global Placement Core
+[09:35:23] Phase 2.2.1 Physical Synthesis In Placer
+[09:37:57] Phase 3 Detail Placement
+[09:37:57] Phase 3.1 Commit Multi Column Macros
+[09:37:57] Phase 3.2 Commit Most Macros & LUTRAMs
+[09:38:28] Phase 3.3 Area Swap Optimization
+[09:38:28] Phase 3.4 Pipeline Register Optimization
+[09:38:28] Phase 3.5 IO Cut Optimizer
+[09:38:28] Phase 3.6 Fast Optimization
+[09:40:00] Phase 3.7 Small Shape Clustering
+[09:40:31] Phase 3.8 Flow Legalize Slice Clusters
+[09:40:31] Phase 3.9 Slice Area Swap
+[09:41:02] Phase 3.10 Commit Slice Clusters
+[09:41:32] Phase 3.11 Re-assign LUT pins
+[09:42:03] Phase 3.12 Pipeline Register Optimization
+[09:42:03] Phase 3.13 Fast Optimization
+[09:44:06] Phase 4 Post Placement Optimization and Clean-Up
+[09:44:06] Phase 4.1 Post Commit Optimization
+[09:46:40] Phase 4.1.1 Post Placement Optimization
+[09:46:40] Phase 4.1.1.1 BUFG Insertion
+[09:47:42] Phase 4.2 Post Placement Cleanup
+[09:47:42] Phase 4.3 Placer Reporting
+[09:47:42] Phase 4.4 Final Placement Cleanup
+[09:49:14] Finished 4th of 6 tasks (FPGA logic placement). Elapsed time: 00h 27m 12s 
+
+[09:49:14] Starting logic routing..
+[09:49:14] Phase 1 Build RT Design
+[09:51:48] Phase 2 Router Initialization
+[09:51:48] Phase 2.1 Create Timer
+[09:51:48] Phase 2.2 Fix Topology Constraints
+[09:51:48] Phase 2.3 Pre Route Cleanup
+[09:51:48] Phase 2.4 Global Clock Net Routing
+[09:51:48] Phase 2.5 Update Timing
+[09:55:24] Phase 3 Initial Routing
+[09:55:55] Phase 4 Rip-up And Reroute
+[09:55:55] Phase 4.1 Global Iteration 0
+[10:02:36] Phase 4.2 Global Iteration 1
+[10:03:06] Phase 5 Delay and Skew Optimization
+[10:03:06] Phase 5.1 Delay CleanUp
+[10:03:06] Phase 5.1.1 Update Timing
+[10:04:08] Phase 5.2 Clock Skew Optimization
+[10:04:08] Phase 6 Post Hold Fix
+[10:04:08] Phase 6.1 Hold Fix Iter
+[10:04:08] Phase 6.1.1 Update Timing
+[10:04:39] Phase 7 Route finalize
+[10:05:10] Phase 8 Verifying routed nets
+[10:05:10] Phase 9 Depositing Routes
+[10:05:41] Phase 10 Post Router Timing
+[10:05:41] Finished 5th of 6 tasks (FPGA routing). Elapsed time: 00h 16m 26s 
+
+[10:05:41] Starting bitstream generation..
+[10:13:54] Creating bitmap...
+[10:14:55] Writing bitstream ./zcu104_wrapper.bit...
+[10:14:55] Finished 6th of 6 tasks (FPGA bitstream generation). Elapsed time: 00h 09m 14s 
+[10:14:59] Run vpl: Step impl: Completed
+[10:15:00] Run vpl: FINISHED. Run Status: impl Complete!
+INFO: [VPL 60-841] Created output file: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/p0/vpl/address_map.xml
+INFO: [VPL 60-841] Created output file: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/p0/vpl/system.bit
+INFO: [VPL 60-841] Created output file: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/p0/vpl/system.hdf
+INFO: [VPL 60-841] Created output file: C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/p0/vpl/_new_clk_freq
+C:/Xilinx/SDx/2019.1/bin/cf2sw  -i C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/.llvm/apsys_0.xml  -r C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/.cdb/xd_ip_db.xml  -a address_map.xml  -pollMode 0 -mc
+Software tracing enabled
+Compile hardware access API functions
+aarch64-linux-gnu-gcc         -I C:/Xilinx/SDx/2019.1/target/aarch64-linux/include  -D HLS_NO_XIL_FPO_LIB  -I C:/Xilinx/Vivado/2019.1/include -c  C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/swstubs/portinfo.c
+aarch64-linux-gnu-g++        -I C:/Xilinx/SDx/2019.1/target/aarch64-linux/include  -D HLS_NO_XIL_FPO_LIB  -I C:/Xilinx/Vivado/2019.1/include -c  C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/swstubs/cf_stub.c
+aarch64-linux-gnu-ar crs C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/swstubs/libxlnk_stub.a C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/swstubs/portinfo.o C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/swstubs/cf_stub.o
+aarch64-linux-gnu-ar crs C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/swstubs/libskynet.a C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/swstubs/portinfo.o C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/swstubs/cf_stub.o C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/swstubs/SkyNet.o
+Link application ELF file
+aarch64-linux-gnu-g++    C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/swstubs/SkyNet.o C:/Users/zhangqx/workspace/SDSoC/skynet/Release/src/transform.o C:/Users/zhangqx/workspace/SDSoC/skynet/Release/src/utils.o C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/swstubs/main.o      -LC:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/swstubs -Wl,--start-group  -Wl,--end-group -Wl,--start-group    -lpthread -LC:/Xilinx/SDx/2019.1/target/aarch64-linux/lib -lsds_lib -lxlnk_stub  -Wl,--end-group -o C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/swstubs/skynet.elf 
+aarch64-linux-gnu-objcopy -R .xdinfo -R .xddata -R .xdasm -R .xdfcnmap -R .xdhlscore -R .xdif -R .xdparams -R .xdcore -R .xdrepo -R .xdsdata -R .xdpp -R .xdrtlx C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/swstubs/skynet.elf
+No timing report available
+sds++ log file saved as C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/reports/sds.log
+sds++ completed at Wed Jul 08 10:15:11 +0800 2020

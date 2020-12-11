@@ -1,0 +1,34 @@
+(c) Copyright 2012-2019 Xilinx, Inc. All Rights Reserved.
+#-----------------------------------------------------------
+# Tool version  : sds++ 2019.1 SW Build 2552052 on Fri May 24 14:51:15 MDT 2019
+# Start time    : Wed Jul 08 08:19:43 +0800 2020
+# Command line  : sds++ -o skynet.elf ./src/SkyNet.o ./src/main.o ./src/transform.o ./src/utils.o -dmclkid 2 -sds-sys-config a53_linux -sds-proc a53_linux -sds-pf zcu104
+# Log file      : C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/reports/sds.log
+# Journal file  : C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/reports/sds.jou
+# Report file   : C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/reports/sds.rpt
+#-----------------------------------------------------------
+
+-------------------
+Design Timing Check
+-------------------
+
+  Partition 0
+  Vivado Log     : file not found : C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/p0/vivado/vivado.log
+  Timing Summary : file not found : C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/p0/vivado/prj/prj.runs/impl_1/*_timing_summary_routed.rpt
+
+  No timing report available
+
+-------------------
+Data Motion Network
+-------------------
+
+Data motion network report generated in C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/reports
+HTML file : C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/reports/data_motion.html
+
+-------------------
+Design Utilization
+-------------------
+
+  Partition 0
+  Utilization Summary : file not found : C:/Users/zhangqx/workspace/SDSoC/skynet/Release/_sds/p0/vivado/prj/prj.runs/impl_1/*_utilization_placed.rpt
+
