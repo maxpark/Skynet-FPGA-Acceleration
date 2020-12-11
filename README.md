@@ -1,6 +1,6 @@
 # Skynet-FPGA-Acceleration
-* Platform: ZCU104 Evaluation Board
-* Software: SDx 2019.1
+* **Platform**: ZCU104 Evaluation Board
+* **Software**: SDx 2019.1
 
 ## Run test
 Load the bit file in board_files folder and then run
